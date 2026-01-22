@@ -1,0 +1,20 @@
+{
+    "name": "devangar-backend",
+    "version": "1.0.0",
+    "description": "Content compilation pipeline for Devangar Polytechnic College",
+    "main": "build/index.ts",
+    "scripts": {
+        "build": "ts-node build/index.ts",
+        "sanity-check": "ts-node scripts/sanity-check.ts",
+        "type-check": "tsc --noEmit"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
