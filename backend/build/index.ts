@@ -14,7 +14,7 @@ async function runBuildPipeline() {
 
     // 1. Load
     const rawContent = await loadRawContent();
-    console.log(`Loaded ${rawContent.length} items.`);
+    console.log(`Loaded ${rawContent.length} files.`);
 
     // 2. Validate
     await validateContent(rawContent);

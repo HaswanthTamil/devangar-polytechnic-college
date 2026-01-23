@@ -9,14 +9,24 @@
  * @param content Validated raw content.
  * @returns Processed content.
  */
-export function transformContent(content: any[]): any[] {
+export function transformContent(content: { filename: string; data: any }[]): { filename: string; data: any }[] {
   return content.map(item => {
-    // TODO: Implement normalization logic (e.g., slugification, date formatting)
-    // TODO: Implement enrichment logic (e.g., adding calculated fields)
+    const { filename, data } = item;
     
+    // If data is an array (like pages.json), transform each element
+    const transformedData = Array.isArray(data) 
+      ? data.map(subItem => ({
+          ...subItem,
+          _processedAt: new Date(new Date().getTime() + 5.5 * 60 * 60 * 1000).toISOString().replace('Z', '+05:30'),
+        }))
+      : {
+          ...data,
+          _processedAt: new Date(new Date().getTime() + 5.5 * 60 * 60 * 1000).toISOString().replace('Z', '+05:30'),
+        };
+
     return {
-      ...item,
-      _processedAt: new Date().toISOString(), // Example meta field
+      filename,
+      data: transformedData,
     };
   });
 }

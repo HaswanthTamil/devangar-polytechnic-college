@@ -12,16 +12,15 @@ import { PATHS } from '../config/content.config';
  * Overwrites existing files.
  * @param content The processed content to write.
  */
-export async function generateOutput(content: any[]): Promise<void> {
+export async function generateOutput(content: { filename: string; data: any }[]): Promise<void> {
   // Ensure the processed directory exists
   await fs.mkdir(PATHS.PROCESSED, { recursive: true });
 
-  const writePromises = content.map(async (item, index) => {
-    // TODO: Use a more sophisticated naming convention (e.g., item.slug or item.id)
-    const fileName = `item-${index}.json`;
-    const filePath = path.join(PATHS.PROCESSED, fileName);
+  const writePromises = content.map(async (item) => {
+    const { filename, data } = item;
+    const filePath = path.join(PATHS.PROCESSED, filename);
     
-    await fs.writeFile(filePath, JSON.stringify(item, null, 2), 'utf-8');
+    await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
   });
 
   await Promise.all(writePromises);

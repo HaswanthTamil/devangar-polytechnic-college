@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "placements",
+    "title": "Placements",
+    "published": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Our placement cell works tirelessly to ensure students get the best opportunities."
+      }
+    ],
+    "_processedAt": "2026-01-23T13:44:27.676+05:30"
+  },
+  {
+    "slug": "alumni",
+    "title": "Alumni",
+    "published": true,
+    "sections": [
+      {
+        "type": "text",
+        "content": "Our alumni are our pride, contributing to various industries worldwide."
+      }
+    ],
+    "_processedAt": "2026-01-23T13:44:27.676+05:30"
+  }
+]
