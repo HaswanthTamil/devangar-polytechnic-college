@@ -1,0 +1,11 @@
+{
+    "aboutText": "Short text",
+    "address": "Chennai",
+    "contacts": {
+        "emails": [],
+        "mobiles": [
+            "+91-ABCD"
+        ]
+    },
+    "extraField": "should not exist"
+}

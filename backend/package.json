@@ -8,7 +8,10 @@
         "sanity-check": "ts-node scripts/sanity-check.ts",
         "type-check": "tsc --noEmit"
     },
-    "dependencies": {},
+    "dependencies": {
+        "ajv": "^8.17.1",
+        "ajv-formats": "^3.0.1"
+    },
     "devDependencies": {
         "@types/node": "^20.0.0",
         "ts-node": "^10.9.1",

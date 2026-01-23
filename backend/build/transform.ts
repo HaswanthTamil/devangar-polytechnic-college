@@ -10,22 +10,25 @@
  * @returns Processed content.
  */
 export function transformContent(content: { filename: string; data: any }[]): { filename: string; data: any }[] {
+  // Use map to create a new array (no in-place mutation)
   return content.map(item => {
     const { filename, data } = item;
     
-    // If data is an array (like pages.json), transform each element
+    const timestamp = new Date(new Date().getTime() + 5.5 * 60 * 60 * 1000).toISOString().replace('Z', '+05:30');
+
+    // If data is an array (like pages.json), transform each element into a NEW object
     const transformedData = Array.isArray(data) 
       ? data.map(subItem => ({
-          ...subItem,
-          _processedAt: new Date(new Date().getTime() + 5.5 * 60 * 60 * 1000).toISOString().replace('Z', '+05:30'),
+          ...subItem, // Spread to create new object
+          _processedAt: timestamp,
         }))
       : {
-          ...data,
-          _processedAt: new Date(new Date().getTime() + 5.5 * 60 * 60 * 1000).toISOString().replace('Z', '+05:30'),
+          ...data, // Spread to create new object
+          _processedAt: timestamp,
         };
 
     return {
-      filename,
+      filename, // Re-use filename string (immutable)
       data: transformedData,
     };
   });

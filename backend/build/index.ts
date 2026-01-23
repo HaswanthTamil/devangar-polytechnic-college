@@ -16,7 +16,7 @@ async function runBuildPipeline() {
     const rawContent = await loadRawContent();
     console.log(`Loaded ${rawContent.length} files.`);
 
-    // 2. Validate
+    // 2. Validate (MUST run on raw data before transformation)
     await validateContent(rawContent);
 
     // 3. Transform

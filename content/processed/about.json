@@ -1,0 +1,12 @@
+{
+  "aboutText": "Short text",
+  "address": "Chennai",
+  "contacts": {
+    "emails": [],
+    "mobiles": [
+      "+91-ABCD"
+    ]
+  },
+  "extraField": "should not exist",
+  "_processedAt": "2026-01-23T14:20:04.926+05:30"
+}
