@@ -13,11 +13,13 @@
         "properties": {
             "slug": {
                 "type": "string",
-                "pattern": "^[a-z0-9-]+$",
-                "description": "URL-safe, lowercase, hyphens only"
+                "pattern": "^[a-z0-9-]+$"
             },
             "title": {
                 "type": "string"
+            },
+            "published": {
+                "type": "boolean"
             },
             "sections": {
                 "type": "array",
@@ -37,9 +39,6 @@
                         }
                     }
                 }
-            },
-            "published": {
-                "type": "boolean"
             }
         }
     }

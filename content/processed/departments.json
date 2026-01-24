@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "civil-engineering",
+    "name": "Civil Engineering",
+    "visible": true,
+    "position": 1,
+    "_processedAt": "2026-01-24T14:16:31.832+05:30"
+  },
+  {
+    "slug": "mechanical-engineering",
+    "name": "Mechanical Engineering",
+    "visible": true,
+    "position": 2,
+    "_processedAt": "2026-01-24T14:16:31.832+05:30"
+  }
+]

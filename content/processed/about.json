@@ -1,12 +1,15 @@
 {
-  "aboutText": "Short text",
-  "address": "Chennai",
+  "aboutText": "Devangar Polytechnic College is a premier technical institution committed to providing quality education and fostering innovation in engineering and technology for over three decades.",
+  "address": "Main Road, Devangar City, Tamil Nadu - 625001",
   "contacts": {
-    "emails": [],
+    "emails": [
+      "info@devangar.edu.in",
+      "admin@devangar.edu.in"
+    ],
     "mobiles": [
-      "+91-ABCD"
+      "+91 9876543210",
+      "0452-2345678"
     ]
   },
-  "extraField": "should not exist",
-  "_processedAt": "2026-01-23T14:20:04.926+05:30"
+  "_processedAt": "2026-01-24T14:16:31.830+05:30"
 }

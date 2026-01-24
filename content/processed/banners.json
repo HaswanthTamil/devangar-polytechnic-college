@@ -1,0 +1,16 @@
+[
+  {
+    "image": "/images/banners/college-front.jpg",
+    "alt": "College Main Building",
+    "position": 1,
+    "visible": true,
+    "_processedAt": "2026-01-24T14:16:31.832+05:30"
+  },
+  {
+    "image": "/images/banners/lab.jpg",
+    "alt": "Computer Laboratory",
+    "position": 2,
+    "visible": true,
+    "_processedAt": "2026-01-24T14:16:31.832+05:30"
+  }
+]

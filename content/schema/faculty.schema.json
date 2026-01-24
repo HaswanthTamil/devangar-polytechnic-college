@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": [
+            "name",
+            "department",
+            "designation",
+            "photo",
+            "position",
+            "visible"
+        ],
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "type": "string"
+            },
+            "department": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+            },
+            "designation": {
+                "type": "string"
+            },
+            "photo": {
+                "type": "string"
+            },
+            "position": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "visible": {
+                "type": "boolean"
+            }
+        }
+    }
+}

@@ -1,15 +1,14 @@
 [
   {
-    "slug": "Placements!",
-    "title": "Placements",
+    "slug": "welcome",
+    "title": "Welcome to Devangar Polytechnic",
+    "published": true,
     "sections": [
       {
-        "type": "markdown",
-        "content": "This should not be allowed."
+        "type": "text",
+        "content": "This is a custom page text content."
       }
     ],
-    "published": "yes",
-    "unexpected": true,
-    "_processedAt": "2026-01-23T14:20:04.927+05:30"
+    "_processedAt": "2026-01-24T14:16:31.832+05:30"
   }
 ]

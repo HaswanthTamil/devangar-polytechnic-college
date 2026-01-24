@@ -1,8 +1,11 @@
 [
   {
-    "name": "Dr. Kumar",
-    "department": "CSE",
-    "email": "kumar@example.com",
-    "_processedAt": "2026-01-23T14:20:04.927+05:30"
+    "name": "Dr. John Doe",
+    "department": "civil-engineering",
+    "designation": "Head of Department",
+    "photo": "/images/faculty/john-doe.jpg",
+    "position": 1,
+    "visible": true,
+    "_processedAt": "2026-01-24T14:16:31.832+05:30"
   }
 ]
