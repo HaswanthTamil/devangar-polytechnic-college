@@ -3,20 +3,17 @@
     "text": "Faculty needed in department of Physics",
     "link": "",
     "position": 3,
-    "visible": true,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "visible": true
   },
   {
     "text": "Admissions are open for the academic year 2025-260.",
     "position": 1,
-    "visible": true,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "visible": true
   },
   {
     "text": "Upcoming annual day celebrations on Feb 15th.",
     "position": 2,
     "visible": true,
-    "link": "/events/annual-day",
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "link": "/events/annual-day"
   }
 ]

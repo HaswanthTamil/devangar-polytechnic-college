@@ -3,14 +3,12 @@
     "image": "/images/banners/college-front.jpg",
     "alt": "College Main Building",
     "position": 1,
-    "visible": true,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "visible": true
   },
   {
     "image": "/images/banners/lab.jpg",
     "alt": "Computer Laboratory",
     "position": 2,
-    "visible": true,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "visible": true
   }
 ]

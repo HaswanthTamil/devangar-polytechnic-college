@@ -3,14 +3,12 @@
     "slug": "civil-engineering",
     "name": "Civil Engineering",
     "visible": true,
-    "position": 1,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "position": 1
   },
   {
     "slug": "mechanical-engineering",
     "name": "Mechanical Engineering",
     "visible": true,
-    "position": 2,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "position": 2
   }
 ]

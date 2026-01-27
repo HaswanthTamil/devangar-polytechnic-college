@@ -1,21 +1,12 @@
 "use client";
 
 import React from 'react';
-import { Page, Announcement } from '@/lib/types';
+import { TemplateProps } from '@/lib/types';
 import ElegantHeader from '@/components/ElegantHeader';
 import ElegantFooter from '@/components/ElegantFooter';
 import { motion } from 'framer-motion';
 
-// Mock announcements if not passed? 
-// In a real app we'd fetch these globally or in a Layout, but for now passing empty or we need to change how this works.
-// For now, I'll update the prop signature to require announcements.
-
-interface DefaultPageProps {
-    page: Page;
-    announcements?: Announcement[]; // Optional for now
-}
-
-export default function DefaultPage({ page, announcements = [] }: DefaultPageProps) {
+export default function DefaultPage({ page, announcements, banners, gallery, files }: TemplateProps) {
     return (
         <div className="flex flex-col min-h-screen bg-stone-50 font-sans text-stone-900 overflow-x-hidden selection:bg-amber-900 selection:text-white">
             <ElegantHeader announcements={announcements} />

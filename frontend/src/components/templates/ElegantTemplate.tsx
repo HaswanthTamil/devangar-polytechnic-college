@@ -1,8 +1,6 @@
 "use client";
 
-import React from 'react';
-import { Page, Banner, Announcement, GalleryItem, FileItem } from '@/lib/types';
-import Banners from '../Banners';
+import { TemplateProps } from '@/lib/types';
 import Gallery from '../Gallery';
 import FileList from '../FileList';
 import ElegantHeader from '../ElegantHeader';
@@ -26,15 +24,7 @@ const staggerContainer: Variants = {
     }
 };
 
-interface ElegantTemplateProps {
-    page: Page;
-    banners: Banner[];
-    announcements: Announcement[];
-    gallery: GalleryItem[];
-    files: FileItem[];
-}
-
-export default function ElegantTemplate({ page, banners, announcements, gallery, files }: ElegantTemplateProps) {
+export default function ElegantTemplate({ page, banners, announcements, gallery, files }: TemplateProps) {
     return (
         <div className="flex flex-col min-h-screen bg-stone-50 font-sans text-stone-900 overflow-x-hidden selection:bg-red-900 selection:text-white">
 

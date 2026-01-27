@@ -2,7 +2,6 @@ import DefaultPage from './DefaultPage';
 import ProfilePage from './ProfilePage';
 import LandingPage from './LandingPage';
 import ElegantTemplate from './ElegantTemplate';
-import { Page } from '@/lib/types';
 
 const templates = {
     DefaultPage,

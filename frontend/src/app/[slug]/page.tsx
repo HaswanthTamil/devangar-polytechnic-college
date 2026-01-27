@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getPages, getPageBySlug, getAnnouncements } from '@/lib/content'; // Import getAnnouncements
+import { getPages, getPageBySlug, getAnnouncements, getBanners, getGallery, getFiles } from '@/lib/content'; // Import more helpers
 import { getTemplate } from '@/components/templates';
 
 // 1. Generate Static Params
@@ -15,6 +15,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     const { slug } = await params;
     const pageData = getPageBySlug(slug);
     const announcements = getAnnouncements(); // Fetch announcements
+    const banners = getBanners();
+    const gallery = getGallery();
+    const files = getFiles();
 
     if (!pageData) {
         notFound();
@@ -23,6 +26,14 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     // 3. Template Selection
     const Template = getTemplate(pageData.template);
 
-    // Pass announcements to the template
-    return <Template page={pageData} announcements={announcements} />;
+    // Pass all required props to the template
+    return (
+        <Template
+            page={pageData}
+            announcements={announcements}
+            banners={banners}
+            gallery={gallery}
+            files={files}
+        />
+    );
 }

@@ -1,7 +1,6 @@
-import React from 'react';
-import { Page } from '@/lib/types';
+import { TemplateProps } from '@/lib/types';
 
-export default function ProfilePage({ page }: { page: Page }) {
+export default function ProfilePage({ page, banners, announcements, gallery, files }: TemplateProps) {
     return (
         <div className="container mx-auto px-4 py-8">
             <div className="bg-white shadow-lg rounded-lg p-6 max-w-4xl mx-auto">

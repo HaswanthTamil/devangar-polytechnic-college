@@ -75,3 +75,11 @@ export interface AboutData {
         mobiles: string[];
     };
 }
+
+export interface TemplateProps {
+    page: Page;
+    banners: Banner[];
+    announcements: Announcement[];
+    gallery: GalleryItem[];
+    files: FileItem[];
+}

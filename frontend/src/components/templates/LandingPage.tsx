@@ -1,18 +1,10 @@
-import React from 'react';
-import { getBanners, getAnnouncements, getGallery, getFiles } from '@/lib/content';
-import { Page } from '@/lib/types';
+import { TemplateProps } from '@/lib/types';
 import Banners from '../Banners';
 import AnnouncementsCarousel from '../AnnouncementsCarousel';
 import Gallery from '../Gallery';
 import FileList from '../FileList';
 
-export default function LandingPage({ page }: { page: Page }) {
-    // We ignore 'page.sections' for the pure layout if we want a fixed template look, 
-    // OR we interleave them. Let's place page content below hero.
-    const banners = getBanners();
-    const announcements = getAnnouncements();
-    const gallery = getGallery();
-    const files = getFiles();
+export default function LandingPage({ page, banners, announcements, gallery, files }: TemplateProps) {
 
     return (
         <div className="flex flex-col min-h-screen bg-gray-50 font-sans">

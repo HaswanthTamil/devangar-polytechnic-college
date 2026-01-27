@@ -5,7 +5,6 @@
     "designation": "Head of Department",
     "photo": "/images/faculty/john-doe.jpg",
     "position": 1,
-    "visible": true,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "visible": true
   }
 ]

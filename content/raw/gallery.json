@@ -3,7 +3,6 @@
     "image": "/images/gallery/event1.jpg",
     "category": "Events",
     "position": 1,
-    "visible": true,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "visible": true
   }
 ]
