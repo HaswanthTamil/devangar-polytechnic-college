@@ -11,7 +11,7 @@ export * from './types'; // Re-export types for backward compatibility if needed
 // But safe bet is strictly separate.
 // I will NOT re-export. I will update imports.
 
-const CONTENT_DIR = path.join(process.cwd(), '../content/processed');
+const CONTENT_DIR = path.join(process.cwd(), 'src/app/content/processed')
 
 function readContent<T>(fileName: string): T {
     const filePath = path.join(CONTENT_DIR, fileName);
