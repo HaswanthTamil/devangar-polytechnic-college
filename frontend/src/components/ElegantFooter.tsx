@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function ElegantFooter() {
@@ -61,7 +62,8 @@ export default function ElegantFooter() {
 
                     {/* Developer Credit */}
                     <a
-                        href="#"
+                        href="https://bytesbrush.in"
+                        target="_blank"
                         className="flex items-center gap-4 group hover:text-white transition-colors duration-500"
                     >
                         <div className="flex flex-col items-end leading-tight">
@@ -70,10 +72,12 @@ export default function ElegantFooter() {
                         </div>
                         {/* Logo */}
                         <div className="w-6 h-6 opacity-60 group-hover:opacity-100 transition-all duration-500 filter grayscale group-hover:grayscale-0 group-hover:scale-110">
-                            <img
+                            <Image
                                 src="/images/bytesbrush-logo.png"
                                 alt="BytesBrush Logo"
                                 className="w-full h-full object-contain invert"
+                                width={20}
+                                height={20}
                             />
                         </div>
                     </a>

@@ -1,11 +1,16 @@
-
-import { getPageBySlug, getBanners, getAnnouncements, getGallery, getFiles } from '@/lib/content';
-import ElegantTemplate from '@/components/templates/ElegantTemplate';
-import { notFound } from 'next/navigation';
+import {
+  getPageBySlug,
+  getBanners,
+  getAnnouncements,
+  getGallery,
+  getFiles,
+} from "@/lib/content";
+import ElegantTemplate from "@/components/templates/ElegantTemplate";
+import { redirect } from "next/navigation";
 
 export default function Home() {
   // The slug in pages.json is "welcome", not "home"
-  const page = getPageBySlug('welcome');
+  const page = getPageBySlug("welcome");
 
   // We still want to load other content
   const banners = getBanners();
@@ -13,10 +18,8 @@ export default function Home() {
   const gallery = getGallery();
   const files = getFiles();
 
-  // If "welcome" page is missing, fall back to a mock object or 404
-  if (!page) {
-    return notFound();
-  }
+  // If "welcome" page is missing, redirect to fallback
+  if (!page) redirect("/departments/cse");
 
   return (
     <ElegantTemplate
