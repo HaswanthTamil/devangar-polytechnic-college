@@ -15,8 +15,11 @@ const CONTENT_DIR = path.join(process.cwd(), 'src/app/content/processed')
 
 function readContent<T>(fileName: string): T {
     const filePath = path.join(CONTENT_DIR, fileName);
+    console.log(`Reading content from: ${filePath}`); // Debug log
     try {
         const fileContents = fs.readFileSync(filePath, 'utf8');
+        if (!fileContents) console.log(`File ${fileName} is empty`);
+        if (fileContents) console.log('File size: ' + fileContents.length);
         return JSON.parse(fileContents) as T;
     } catch (error) {
         console.error(`Error reading content file ${fileName}:`, error);
@@ -26,13 +29,13 @@ function readContent<T>(fileName: string): T {
 
 // --- Helper Functions ---
 
-const isVisible = (item: any) => {
+const isVisible = (item: { published?: boolean; visible?: boolean }) => {
     if (item.published !== undefined) return item.published;
     if (item.visible !== undefined) return item.visible;
     return true;
 };
 
-const sortByPosition = (a: any, b: any) => {
+const sortByPosition = (a: { position?: number }, b: { position?: number }) => {
     const posA = a.position !== undefined ? a.position : 9999;
     const posB = b.position !== undefined ? b.position : 9999;
     return posA - posB;

@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { getPageBySlug, getBanners, getAnnouncements, getGallery, getFiles } from '@/lib/content';
 import ElegantTemplate from '@/components/templates/ElegantTemplate';
 import { notFound } from 'next/navigation';

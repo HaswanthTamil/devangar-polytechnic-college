@@ -17,8 +17,8 @@ export default function EditContentPage() {
     const router = useRouter();
     const filename = params.filename as string;
 
-    const [data, setData] = useState<any>(null);
-    const [schema, setSchema] = useState<any>(null);
+    const [data, setData] = useState<Record<string, unknown> | null>(null);
+    const [schema, setSchema] = useState<Record<string, unknown> | null>(null);
     const [loading, setLoading] = useState(true);
     const [isSaving, startTransition] = useTransition();
     const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
@@ -136,7 +136,7 @@ export default function EditContentPage() {
                         <div className="p-8 border border-dashed border-stone-300">
                             <h4 className="text-[10px] font-bold uppercase tracking-widest text-stone-400 mb-4">Editing Note</h4>
                             <p className="text-xs text-stone-500 font-serif leading-relaxed italic">
-                                "Changes saved here affect the raw content data. Remember to rebuild the site via the dashboard to make these changes live on the public pages."
+                                &quot;Changes saved here affect the raw content data. Remember to rebuild the site via the dashboard to make these changes live on the public pages.&quot;
                             </p>
                         </div>
                     </aside>

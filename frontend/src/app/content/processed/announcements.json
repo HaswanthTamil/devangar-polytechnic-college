@@ -1,22 +1,22 @@
 [
   {
-    "text": "Faculty needed in department of Physics",
+    "text": "College day celebration on Feb 20",
     "link": "",
-    "position": 3,
+    "position": 0,
     "visible": true,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "_processedAt": "2026-02-04T10:38:17.026+05:30"
   },
   {
     "text": "Admissions are open for the academic year 2025-260.",
     "position": 1,
     "visible": true,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "_processedAt": "2026-02-04T10:38:17.026+05:30"
   },
   {
     "text": "Upcoming annual day celebrations on Feb 15th.",
     "position": 2,
     "visible": true,
     "link": "/events/annual-day",
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
+    "_processedAt": "2026-02-04T10:38:17.026+05:30"
   }
 ]

@@ -2,7 +2,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const CONTENT_ROOT = path.resolve(process.cwd(), '../content');
+const CONTENT_ROOT = path.join(process.cwd(), 'src/app/content');
 const PATHS = {
     RAW: path.join(CONTENT_ROOT, 'raw'),
     SCHEMA: path.join(CONTENT_ROOT, 'schema'),
@@ -25,13 +25,13 @@ export async function getSchema(filename: string) {
     try {
         const data = await fs.readFile(schemaPath, 'utf-8');
         return JSON.parse(data);
-    } catch (error) {
+    } catch {
         console.warn(`No schema found for ${filename}`);
         return null;
     }
 }
 
-export async function saveRawContent(filename: string, data: any) {
+export async function saveRawContent(filename: string, data: unknown) {
     const filePath = path.join(PATHS.RAW, filename);
     await fs.writeFile(filePath, JSON.stringify(data, null, 2), 'utf-8');
 }

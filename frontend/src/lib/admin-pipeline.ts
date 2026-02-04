@@ -11,7 +11,7 @@ const ajv = new Ajv({
 });
 addFormats(ajv);
 
-const CONTENT_ROOT = path.resolve(process.cwd(), '../content');
+const CONTENT_ROOT = path.join(process.cwd(), 'src/app/content');
 const PATHS = {
     RAW: path.join(CONTENT_ROOT, 'raw'),
     SCHEMA: path.join(CONTENT_ROOT, 'schema'),
@@ -20,7 +20,7 @@ const PATHS = {
 
 interface ContentItem {
     filename: string;
-    data: any;
+    data: unknown;
 }
 
 export async function loadRawContent(): Promise<ContentItem[]> {
@@ -74,8 +74,9 @@ export async function validateContent(content: ContentItem[]): Promise<void> {
             }
 
             console.log(`Successfully validated ${filename} against ${schemaName}`);
-        } catch (err: any) {
-            if (err.code === 'ENOENT') {
+        } catch (err: unknown) {
+            const isEnoent = err instanceof Error && 'code' in err && (err as { code: string }).code === 'ENOENT';
+            if (isEnoent) {
                 console.warn(`No schema found for ${filename}, skipping validation.`);
             } else {
                 throw err;
@@ -90,15 +91,20 @@ export function transformContent(content: ContentItem[]): ContentItem[] {
     return content.map(item => {
         const { filename, data } = item;
 
-        const transformedData = Array.isArray(data)
-            ? data.map(subItem => ({
-                ...subItem,
+        let transformedData;
+        if (Array.isArray(data)) {
+            transformedData = data.map(subItem => ({
+                ...(typeof subItem === 'object' && subItem !== null ? subItem : {}),
                 _processedAt: timestamp,
-            }))
-            : {
+            }));
+        } else if (typeof data === 'object' && data !== null) {
+            transformedData = {
                 ...data,
                 _processedAt: timestamp,
             };
+        } else {
+            transformedData = data; // Should not happen if validation passes, but fallback
+        }
 
         return {
             filename,
@@ -122,6 +128,12 @@ export async function generateOutput(content: ContentItem[]): Promise<void> {
 
 export async function rebuildContentPipeline() {
     console.log('Starting content rebuild pipeline (frontend)...');
+    console.log('Current Working Directory:', process.cwd());
+    console.log('Pipeline Configuration:', {
+        CONTENT_ROOT,
+        RAW_PATH: PATHS.RAW,
+        PROCESSED_PATH: PATHS.PROCESSED
+    });
 
     const rawContent = await loadRawContent();
     console.log(`Loaded ${rawContent.length} files from raw content.`);

@@ -15,6 +15,10 @@ export default function LoginPage() {
         e.preventDefault();
         setError(null);
         const formData = new FormData(e.currentTarget);
+        console.log('Client: Form Submitted', { 
+            username: formData.get('username'),
+            passwordLength: (formData.get('password') as string)?.length 
+        });
 
         startTransition(async () => {
             const result = await loginAction(formData);

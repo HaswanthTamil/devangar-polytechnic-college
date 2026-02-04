@@ -20,16 +20,17 @@ export async function rebuildContentAction() {
             message: 'Content successfully rebuilt!',
             result
         };
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error('Rebuild action failed:', error);
+        const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
         return {
             success: false,
-            message: error.message || 'An unknown error occurred during rebuild.'
+            message: errorMessage || 'An unknown error occurred during rebuild.'
         };
     }
 }
 
-export async function saveContentAction(filename: string, data: any) {
+export async function saveContentAction(filename: string, data: unknown) {
     try {
         await saveRawContent(filename, data);
 
@@ -40,11 +41,12 @@ export async function saveContentAction(filename: string, data: any) {
             success: true,
             message: `Successfully saved ${filename}`
         };
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error('Save action failed:', error);
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error';
         return {
             success: false,
-            message: error.message || 'Failed to save content.'
+            message: errorMessage || 'Failed to save content.'
         };
     }
 }
@@ -62,25 +64,39 @@ export async function listContentFilesAction() {
 }
 
 export async function loginAction(formData: FormData) {
-    const username = formData.get('username') as string;
-    const password = formData.get('password') as string;
+    console.log('Login Action Triggered');
+    try {
+        const username = formData.get('username') as string;
+        const password = formData.get('password') as string;
 
-    const auth = await getRawContent('auth.json');
+        console.log('Login Attempt Data:', { username, passwordLength: password?.length });
 
-    if (username === auth.username && password === auth.password) {
-        const cookieStore = await cookies();
-        cookieStore.set('admin_session', 'true', {
-            httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
-            sameSite: 'strict',
-            path: '/',
-        });
-        return { success: true };
+        const auth = await getRawContent('auth.json');
+        
+        // console.log('Auth Content Loaded:', { 
+        //     storedUsername: auth.username, 
+        //     storedPassword: auth.password,
+        //     match: username === auth.username && password === auth.password
+        // });
+
+        if (username === auth.username && password === auth.password) {
+            const cookieStore = await cookies();
+            cookieStore.set('admin_session', 'true', {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === 'production',
+                sameSite: 'strict',
+                path: '/',
+            });
+            return { success: true };
+        }
+
+        return { error: 'Invalid username or password' };
+    } catch (error: unknown) {
+        console.error('Login Action Error:', error);
+        const errorMessage = error instanceof Error ? error.message : 'Login failed due to server error';
+        return { error: errorMessage };
     }
-
-    return { error: 'Invalid username or password' };
 }
-
 export async function logoutAction() {
     const cookieStore = await cookies();
     cookieStore.delete('admin_session');
@@ -93,8 +109,9 @@ export async function changePasswordAction(newPassword: string) {
         auth.password = newPassword;
         await saveRawContent('auth.json', auth);
         return { success: true, message: 'Password updated successfully' };
-    } catch (error: any) {
-        return { success: false, message: error.message || 'Failed to update password' };
+    } catch (error: unknown) {
+        const errorMessage = error instanceof Error ? error.message : 'Failed to update password';
+        return { success: false, message: errorMessage };
     }
 }
 
@@ -116,7 +133,7 @@ export async function uploadImageAction(formData: FormData) {
         await fs.mkdir(uploadDir, { recursive: true });
         await fs.writeFile(filePath, buffer);
         return { success: true, url: `/images/uploads/${filename}` };
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error('Upload error:', error);
         return { success: false, message: 'Failed to save image' };
     }
@@ -130,6 +147,7 @@ export async function listImagesAction() {
         const images = files.filter(f => /\.(jpg|jpeg|png|webp|gif|svg)$/i.test(f));
         return images.map(filename => `/images/uploads/${filename}`);
     } catch (error) {
+        console.log(error);
         return [];
     }
 }
