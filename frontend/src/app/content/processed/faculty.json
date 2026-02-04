@@ -7,5 +7,41 @@
     "position": 1,
     "visible": true,
     "_processedAt": "2026-01-27T11:17:58.582+05:30"
+  },
+  {
+    "name": "Prof. Smith",
+    "department": "mechanical-engineering",
+    "designation": "HOD Mechanical",
+    "photo": "",
+    "position": 1,
+    "visible": true,
+    "_processedAt": "2026-02-03T00:00:00.000+05:30"
+  },
+  {
+    "name": "Dr. Alan Turing",
+    "department": "computer-engineering",
+    "designation": "HOD CSE",
+    "photo": "",
+    "position": 1,
+    "visible": true,
+    "_processedAt": "2026-02-03T00:00:00.000+05:30"
+  },
+  {
+    "name": "Mrs. Ada Lovelace",
+    "department": "electronics-communication",
+    "designation": "HOD ECE",
+    "photo": "",
+    "position": 1,
+    "visible": true,
+    "_processedAt": "2026-02-03T00:00:00.000+05:30"
+  },
+  {
+    "name": "Mr. Tesla",
+    "department": "electrical-electronics",
+    "designation": "HOD EEE",
+    "photo": "",
+    "position": 1,
+    "visible": true,
+    "_processedAt": "2026-02-03T00:00:00.000+05:30"
   }
 ]
