@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import {
-    Page, Department, DepartmentContent, Faculty, Announcement, Banner, GalleryItem, FileItem, AboutData
+    Page, Department, DepartmentContent, Faculty, Announcement, Banner, GalleryItem, FileItem, AboutData, Trustee, Principal, DisclosureData
 } from './types';
 
 export * from './types'; // Re-export types for backward compatibility if needed, 
@@ -109,4 +109,21 @@ export function getFiles(year?: number): FileItem[] {
 
 export function getAbout(): AboutData {
     return readContent<AboutData>('about.json');
+}
+
+export function getTrustees(category?: string): Trustee[] {
+    const trustees = readContent<Trustee[]>('trustees.json');
+    let items = trustees.filter(isVisible);
+    if (category) {
+        items = items.filter((item) => item.category === category);
+    }
+    return items.sort(sortByPosition);
+}
+
+export function getPrincipal(): Principal {
+    return readContent<Principal>('principal.json');
+}
+
+export function getDisclosure(): DisclosureData {
+    return readContent<DisclosureData>('disclosure.json');
 }

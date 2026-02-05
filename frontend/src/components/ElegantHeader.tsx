@@ -47,7 +47,7 @@ export default function ElegantHeader({ announcements }: ElegantHeaderProps) {
                         {menuItems.map((item, index) => (
                             <div key={index} className="relative group py-6">
                                 <a
-                                    href={item.href}
+                                    // href={item.href}
                                     className="relative hover:text-red-700 transition-colors duration-300 flex items-center gap-1"
                                 >
                                     {item.label}

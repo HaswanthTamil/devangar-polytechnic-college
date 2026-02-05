@@ -1,0 +1,20 @@
+{
+  "principal": {
+    "name": "Tmt VELVIZHI A",
+    "designation": "Principal",
+    "phone": "04546-235777",
+    "email": "dpc.polycollege@gmail.com, velvizhinandhu2013@gmail.com",
+    "degree": "M.E"
+  },
+  "institutionContact": {
+    "phone": "04546-235444, 235666, 235777",
+    "email": "dpc.polycollege@gmail.com"
+  },
+  "intake": [
+    { "program": "Civil Engineering", "count": 60 },
+    { "program": "Mechanical Engineering", "count": 120 },
+    { "program": "Electrical and Electronics Engineering", "count": 60 },
+    { "program": "Electronics and Communication Engineering", "count": 60 },
+    { "program": "Computer Engineering", "count": 60 }
+  ]
+}

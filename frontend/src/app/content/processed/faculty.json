@@ -1,47 +1,43 @@
 [
-  {
-    "name": "Dr. John Doe",
-    "department": "civil-engineering",
-    "designation": "Head of Department",
-    "photo": "/images/faculty/john-doe.jpg",
-    "position": 1,
-    "visible": true,
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
-  },
-  {
-    "name": "Prof. Smith",
-    "department": "mechanical-engineering",
-    "designation": "HOD Mechanical",
-    "photo": "",
-    "position": 1,
-    "visible": true,
-    "_processedAt": "2026-02-03T00:00:00.000+05:30"
-  },
-  {
-    "name": "Dr. Alan Turing",
-    "department": "computer-engineering",
-    "designation": "HOD CSE",
-    "photo": "",
-    "position": 1,
-    "visible": true,
-    "_processedAt": "2026-02-03T00:00:00.000+05:30"
-  },
-  {
-    "name": "Mrs. Ada Lovelace",
-    "department": "electronics-communication",
-    "designation": "HOD ECE",
-    "photo": "",
-    "position": 1,
-    "visible": true,
-    "_processedAt": "2026-02-03T00:00:00.000+05:30"
-  },
-  {
-    "name": "Mr. Tesla",
-    "department": "electrical-electronics",
-    "designation": "HOD EEE",
-    "photo": "",
-    "position": 1,
-    "visible": true,
-    "_processedAt": "2026-02-03T00:00:00.000+05:30"
-  }
+  { "name": "Tmt Stellamary P", "department": "civil-engineering", "designation": "HOD / Civil Engg", "photo": "", "position": 1, "visible": true },
+  { "name": "Thiru Vignesh N", "department": "civil-engineering", "designation": "Lecturer", "photo": "", "position": 2, "visible": true },
+  { "name": "Thiru Karthick N", "department": "civil-engineering", "designation": "Lecturer", "photo": "", "position": 3, "visible": true },
+  
+  { "name": "Thiru Vivek V", "department": "mechanical-engineering", "designation": "HOD / Mech Engg", "photo": "", "position": 1, "visible": true },
+  { "name": "Thiru Sankarapandian G", "department": "mechanical-engineering", "designation": "Lecturer", "photo": "", "position": 2, "visible": true },
+  { "name": "Thiru Nagendran S", "department": "mechanical-engineering", "designation": "Lecturer", "photo": "", "position": 3, "visible": true },
+  { "name": "Thiru Baskaran M", "department": "mechanical-engineering", "designation": "Lecturer", "photo": "", "position": 4, "visible": true },
+  { "name": "Thiru Satheesh A", "department": "mechanical-engineering", "designation": "Lecturer", "photo": "", "position": 5, "visible": true },
+  { "name": "Thiru Jeyakumar N", "department": "mechanical-engineering", "designation": "Lecturer", "photo": "", "position": 6, "visible": true },
+  { "name": "Thiru Elancheliyan N", "department": "mechanical-engineering", "designation": "Lecturer", "photo": "", "position": 7, "visible": true },
+  { "name": "Thiru Krishnamoorthi J", "department": "mechanical-engineering", "designation": "Lecturer", "photo": "", "position": 8, "visible": true },
+  { "name": "Thiru Jyothibasu K", "department": "mechanical-engineering", "designation": "Lab Instructor", "photo": "", "position": 9, "visible": true },
+  
+  { "name": "Thiru Kathirasan S", "department": "electrical-electronics", "designation": "HOD / EEE", "photo": "", "position": 1, "visible": true },
+  { "name": "Thiru Sivasubramani M", "department": "electrical-electronics", "designation": "Lecturer", "photo": "", "position": 2, "visible": true },
+  { "name": "Tmt Mareeswari", "department": "electrical-electronics", "designation": "Lecturer", "photo": "", "position": 3, "visible": true },
+  { "name": "Thiru Ramu M", "department": "electrical-electronics", "designation": "Lecturer", "photo": "", "position": 4, "visible": true },
+  { "name": "Thiru Alagarraja", "department": "electrical-electronics", "designation": "Lab Instructor", "photo": "", "position": 5, "visible": true },
+  
+  { "name": "Thiru Mohamed Abubakkar N", "department": "electronics-communication", "designation": "HOD / ECE", "photo": "", "position": 1, "visible": true },
+  
+  { "name": "Tmt Rathimala T", "department": "computer-engineering", "designation": "HOD / Comp Engg", "photo": "", "position": 1, "visible": true },
+  { "name": "Tmt Mahalakshmi R", "department": "computer-engineering", "designation": "Lecturer", "photo": "", "position": 2, "visible": true },
+  { "name": "Tmt Durga R", "department": "computer-engineering", "designation": "Lecturer", "photo": "", "position": 3, "visible": true },
+  
+  { "name": "Tmt Ilakkiyadevi R", "department": "basic-engineering", "designation": "HOD / Basic Engg", "photo": "", "position": 1, "visible": true },
+  { "name": "Thiru Boothapandi S", "department": "basic-engineering", "designation": "Lecturer", "photo": "", "position": 2, "visible": true },
+  { "name": "Thiru Suresh Sanjeevi M", "department": "basic-engineering", "designation": "Lecturer", "photo": "", "position": 3, "visible": true },
+  { "name": "Thiru Ramar P", "department": "basic-engineering", "designation": "Lecturer", "photo": "", "position": 4, "visible": true },
+  { "name": "Tmt Senthamilmari P", "department": "basic-engineering", "designation": "Lecturer", "photo": "", "position": 5, "visible": true },
+  { "name": "Thiru Balasubramani K", "department": "basic-engineering", "designation": "Lecturer", "photo": "", "position": 6, "visible": true },
+  { "name": "Thiru Titus Devapriyam J", "department": "basic-engineering", "designation": "Lab Assistant / Chemistry", "photo": "", "position": 7, "visible": true },
+  { "name": "Thiru Bose K T", "department": "basic-engineering", "designation": "Physical Director", "photo": "", "position": 8, "visible": true },
+  
+  { "name": "Tmt Kalyani K", "department": "office-administration", "designation": "PA To Principal", "photo": "", "position": 1, "visible": true },
+  { "name": "Thiru Nagaraj G", "department": "office-administration", "designation": "Office Superintendent", "photo": "", "position": 2, "visible": true },
+  { "name": "Thiru Ramesh B", "department": "office-administration", "designation": "Assistant", "photo": "", "position": 3, "visible": true },
+  { "name": "Thiru Saravanan S", "department": "office-administration", "designation": "Office Assistant", "photo": "", "position": 4, "visible": true },
+  { "name": "Thiru Shajakhan M", "department": "office-administration", "designation": "Office Assistant", "photo": "", "position": 5, "visible": true },
+  { "name": "Thiru Murugesan R", "department": "office-administration", "designation": "Instructor (Technical Staff)", "photo": "", "position": 6, "visible": true }
 ]

@@ -10,7 +10,7 @@ export interface Page {
     visible?: boolean;
     sections: PageSection[];
     template?: 'DefaultPage' | 'ProfilePage' | 'LandingPage';
-    [key: string]: any;
+    [key: string]: unknown;
 }
 
 export interface Department {
@@ -82,4 +82,39 @@ export interface TemplateProps {
     announcements: Announcement[];
     gallery: GalleryItem[];
     files: FileItem[];
+}
+
+export interface Trustee {
+    name: string;
+    image: string;
+    description: string;
+    longDescription?: string;
+    category: 'DPC' | 'DEC';
+    position: number;
+    visible: boolean;
+}
+
+export interface Principal {
+    name: string;
+    image: string;
+    designation: string;
+    message: string;
+}
+
+export interface DisclosureData {
+    principal: {
+        name: string;
+        designation: string;
+        phone: string;
+        email: string;
+        degree: string;
+    };
+    institutionContact: {
+        phone: string;
+        email: string;
+    };
+    intake: Array<{
+        program: string;
+        count: number;
+    }>;
 }

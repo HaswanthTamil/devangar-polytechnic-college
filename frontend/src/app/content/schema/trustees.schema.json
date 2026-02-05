@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "required": [
+            "name",
+            "image",
+            "description",
+            "category",
+            "position",
+            "visible"
+        ],
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "type": "string"
+            },
+            "image": {
+                "type": "string"
+            },
+            "description": {
+                "type": "string"
+            },
+            "longDescription": {
+                "type": "string"
+            },
+            "category": {
+                "type": "string",
+                "enum": ["DPC", "DEC"]
+            },
+            "position": {
+                "type": "integer",
+                "minimum": 0
+            },
+            "visible": {
+                "type": "boolean"
+            }
+        }
+    }
+}

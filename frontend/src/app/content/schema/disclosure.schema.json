@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "principal": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "designation": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "degree": { "type": "string" }
+      },
+      "required": ["name", "designation", "phone", "email", "degree"]
+    },
+    "institutionContact": {
+      "type": "object",
+      "properties": {
+        "phone": { "type": "string" },
+        "email": { "type": "string" }
+      },
+      "required": ["phone", "email"]
+    },
+    "intake": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "program": { "type": "string" },
+          "count": { "type": "number" }
+        },
+        "required": ["program", "count"]
+      }
+    }
+  },
+  "required": ["principal", "institutionContact", "intake"]
+}

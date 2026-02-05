@@ -54,10 +54,10 @@ export default function ElegantFooter() {
                     {/* Copyright & Links */}
                     <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                         <span>&copy; Copyright 2026 <span className="hidden sm:inline">|</span> All Rights Reserved <span className="hidden sm:inline">|</span> Devangar Polytechnic College</span>
-                        <div className="flex space-x-6">
+                        {/* <div className="flex space-x-6">
                             <a href="#" className="hover:text-stone-300 transition-colors">Privacy</a>
                             <a href="#" className="hover:text-stone-300 transition-colors">Legal</a>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Developer Credit */}

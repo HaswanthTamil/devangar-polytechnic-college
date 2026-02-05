@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Announcement } from '@/lib/types';
 
 export default function AnnouncementsCarousel({ data }: { data: Announcement[] }) {

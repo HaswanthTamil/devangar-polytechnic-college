@@ -10,5 +10,35 @@
     "name": "Mechanical Engineering",
     "visible": true,
     "position": 2
+  },
+  {
+    "slug": "computer-engineering",
+    "name": "Computer Engineering",
+    "visible": true,
+    "position": 3
+  },
+  {
+    "slug": "electronics-communication",
+    "name": "Electronics & Communication",
+    "visible": true,
+    "position": 4
+  },
+  {
+    "slug": "electrical-electronics",
+    "name": "Electrical & Electronics",
+    "visible": true,
+    "position": 5
+  },
+  {
+    "slug": "basic-engineering",
+    "name": "Basic Engineering",
+    "visible": true,
+    "position": 6
+  },
+  {
+    "slug": "office-administration",
+    "name": "Office Administration",
+    "visible": true,
+    "position": 7
   }
 ]
