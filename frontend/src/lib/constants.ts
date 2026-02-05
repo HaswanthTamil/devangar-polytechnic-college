@@ -22,8 +22,8 @@ export const menuItems = [
         label: "DEPARTMENTS",
         href: "/departments",
         dropdown: [
-            { label: "Civil Engineering", href: "/departments/civil" },
-            { label: "Mechanical Engineering", href: "/departments/mechanical" },
+            { label: "Civil Engineering", href: "/departments/civil-engineering" },
+            { label: "Mechanical Engineering", href: "/departments/mechanical-engineering" },
             { label: "Computer Engineering", href: "/departments/cse" },
             { label: "EEE", href: "/departments/eee" },
             { label: "ECE", href: "/departments/ece" }

@@ -7,46 +7,6 @@
       "placements": "Top construction firms recruit from here.",
       "activities": "Building modeling workshops and site visits."
     },
-    "_processedAt": "2026-01-27T11:17:58.582+05:30"
-  },
-  {
-    "department": "mechanical-engineering",
-    "sections": {
-      "courses": "Thermodynamics, Manufacturing Technology, Fluid Mechanics, Automobile Engineering.",
-      "facilities": "Lathe workshop, Foundries, Special Machines lab, CAD/CAM lab.",
-      "placements": "Recruited by top automotive and manufacturing industries.",
-      "activities": "Robotics workshops, Industrial visits to manufacturing plants."
-    },
-    "_processedAt": "2026-02-03T00:00:00.000+05:30"
-  },
-  {
-    "department": "computer-engineering",
-    "sections": {
-      "courses": "Data Structures, Web Development, Java Programming, Cloud Computing.",
-      "facilities": "High-performance Computing Lab, Networking Lab, Hardware Lab.",
-      "placements": "Placements in top IT service and product companies.",
-      "activities": "Hackathons, Coding contests, Tech symposiums."
-    },
-    "_processedAt": "2026-02-03T00:00:00.000+05:30"
-  },
-  {
-    "department": "electronics-communication",
-    "sections": {
-      "courses": "Digital Electronics, Microcontrollers, VLSI Design, Embedded Systems.",
-      "facilities": "VLSI Lab, Embedded Systems Lab, Digital Communication Lab.",
-      "placements": "Opportunities in core electronics and telecom companies.",
-      "activities": "Circuit debugging contests, IoT workshops."
-    },
-    "_processedAt": "2026-02-03T00:00:00.000+05:30"
-  },
-  {
-    "department": "electrical-electronics",
-    "sections": {
-      "courses": "Electrical Machines, Power Systems, Control Systems, Power Electronics.",
-      "facilities": "Electrical Machines Lab, Power Electronics Lab, Wiring & Winding Lab.",
-      "placements": "Careers in power sector, manufacturing, and automation industries.",
-      "activities": "Energy audits, Project exhibitions, Technical seminars."
-    },
-    "_processedAt": "2026-02-03T00:00:00.000+05:30"
+    "_processedAt": "2026-02-05T21:02:26.109+05:30"
   }
 ]

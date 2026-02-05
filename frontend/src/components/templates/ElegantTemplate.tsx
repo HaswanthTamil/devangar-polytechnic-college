@@ -6,6 +6,8 @@ import FileList from '../FileList';
 import ElegantHeader from '../ElegantHeader';
 import ElegantFooter from '../ElegantFooter';
 import { motion, Variants } from "framer-motion";
+import Image from 'next/image';
+import Link from 'next/link';
 
 // Animations
 const fadeInUp: Variants = {
@@ -40,7 +42,9 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                         className="absolute inset-0 z-0"
                     >
                         {banners && banners.length > 0 && banners[0].image ? (
-                            <img
+                            <Image
+                                width={1920}
+                                height={1080}
                                 src={banners[0].image}
                                 alt="Hero Background"
                                 className="w-full h-full object-cover opacity-50"
@@ -166,7 +170,7 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
 
                                 <div className="prose prose-lg prose-stone text-stone-600 font-serif leading-relaxed mb-10">
                                     <p>
-                                        We would like to introduce ourselves as a new team of Devangar Educational Trust, belonging to diverse fields. We are keenly interested in taking over the entire administration and functioning of the institution namely called <strong>"DEVANGAR POLYTECHNIC COLLEGE"</strong>.
+                                        We would like to introduce ourselves as a new team of Devangar Educational Trust, belonging to diverse fields. We are keenly interested in taking over the entire administration and functioning of the institution namely called <strong>&quot;DEVANGAR POLYTECHNIC COLLEGE&quot;</strong>.
                                     </p>
                                     <p>
                                         Our new team has united from strong backgrounds to reach new heights in education. Realizing the importance of uplifting downtrodden children and rural communities, we are committed to developing world-class educational institutions.
@@ -200,10 +204,10 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                             >
                                 <span className="text-red-700 font-bold tracking-[0.2em] uppercase text-xs mb-8 block flex items-center gap-3">
                                     <span className="w-6 h-px bg-red-700"></span>
-                                    From the Principal's Desk
+                                    From the Principal&apos;s Desk
                                 </span>
                                 <h2 className="text-4xl md:text-5xl font-playfair font-bold text-stone-900 mb-10 leading-tight">
-                                    "We are committed to fostering an environment of intellectual curiosity and ethical leadership."
+                                    &quot;We are committed to fostering an environment of intellectual curiosity and ethical leadership.&quot;
                                 </h2>
                                 {/* Prose: prose-lg (not xl) */}
                                 <div className="prose prose-lg prose-stone text-stone-600 font-serif leading-relaxed mb-12">
@@ -216,7 +220,6 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                         <span className="font-playfair font-bold text-xl text-stone-900">Dr. Name Here</span>
                                         <span className="text-xs text-stone-500 uppercase tracking-wider mt-1 font-bold">Principal</span>
                                     </div>
-                                    <a href="#" className="text-red-700 text-xs font-bold uppercase tracking-widest border-b border-red-700 pb-1 hover:text-stone-900 hover:border-stone-900 transition-colors">Read Full Message</a>
                                 </div>
                             </motion.div>
 
@@ -230,7 +233,7 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                 <div className="aspect-[3/4] bg-stone-100 relative z-10 shadow-2xl shadow-stone-200 overflow-hidden">
                                     {/* Main Image Placeholder */}
                                     <div className="w-full h-full bg-stone-200 flex items-center justify-center text-stone-400 font-serif italic text-xl">
-                                        Principal's Portrait
+                                        Principal&apos;s Portrait
                                     </div>
                                     {/* Inner Border */}
                                     <div className="absolute inset-4 border border-white/30"></div>
@@ -256,33 +259,41 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                     Our curriculum bridges theoretical foundations with cutting-edge application, preparing students for dynamic careers.
                                 </p>
                             </div>
-                            <a href="#" className="hidden md:flex items-center text-red-700 font-bold hover:text-stone-900 transition mt-6 md:mt-0 group uppercase text-xs tracking-[0.15em]">
+                            <Link href="/departments" className="hidden md:flex items-center text-red-700 font-bold hover:text-stone-900 transition mt-6 md:mt-0 group uppercase text-xs tracking-[0.15em]">
                                 Explore All Departments
                                 <span className="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
-                            {['Civil Engineering', 'Mechanical Engineering', 'Electrical & Electronics', 'Electronics & Comm.', 'Computer Engineering'].map((dept, i) => (
+                            {[
+                                { name: 'Civil Engineering', slug: 'civil-engineering' },
+                                { name: 'Mechanical Engineering', slug: 'mechanical-engineering' },
+                                { name: 'Electrical & Electronics', slug: 'eee' },
+                                { name: 'Electronics & Comm.', slug: 'ece' },
+                                { name: 'Computer Engineering', slug: 'cse' }
+                            ].map((dept, i) => (
                                 <motion.div
                                     key={i}
                                     variants={fadeInUp}
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true }}
-                                    className="group cursor-pointer"
+                                    className="group"
                                 >
-                                    <div className="aspect-[16/10] bg-stone-100 mb-8 relative overflow-hidden">
-                                        <div className="absolute inset-0 bg-stone-200 transition-transform duration-1000 ease-out group-hover:scale-105"></div>
-                                    </div>
-                                    <div className="pr-4">
-                                        <h3 className="text-2xl font-playfair font-bold text-stone-900 mb-4 group-hover:text-red-700 transition-colors duration-300">{dept}</h3>
-                                        {/* Desc: text-sm */}
-                                        <p className="text-stone-500 leading-relaxed mb-6 text-sm">Rigorous coursework combined with hands-on laboratory experience.</p>
-                                        <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-stone-400 group-hover:text-stone-900 transition-colors">
-                                            Details <span className="ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300">&rarr;</span>
-                                        </span>
-                                    </div>
+                                    <Link href={`/departments/${dept.slug}`} className="block">
+                                        <div className="aspect-[16/10] bg-stone-100 mb-8 relative overflow-hidden">
+                                            <div className="absolute inset-0 bg-stone-200 transition-transform duration-1000 ease-out group-hover:scale-105"></div>
+                                        </div>
+                                        <div className="pr-4">
+                                            <h3 className="text-2xl font-playfair font-bold text-stone-900 mb-4 group-hover:text-red-700 transition-colors duration-300">{dept.name}</h3>
+                                            {/* Desc: text-sm */}
+                                            <p className="text-stone-500 leading-relaxed mb-6 text-sm">Rigorous coursework combined with hands-on laboratory experience.</p>
+                                            <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-stone-400 group-hover:text-stone-900 transition-colors">
+                                                Details <span className="ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300">&rarr;</span>
+                                            </span>
+                                        </div>
+                                    </Link>
                                 </motion.div>
                             ))}
                         </div>

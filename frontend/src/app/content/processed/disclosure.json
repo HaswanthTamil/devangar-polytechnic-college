@@ -11,10 +11,26 @@
     "email": "dpc.polycollege@gmail.com"
   },
   "intake": [
-    { "program": "Civil Engineering", "count": 60 },
-    { "program": "Mechanical Engineering", "count": 120 },
-    { "program": "Electrical and Electronics Engineering", "count": 60 },
-    { "program": "Electronics and Communication Engineering", "count": 60 },
-    { "program": "Computer Engineering", "count": 60 }
-  ]
+    {
+      "program": "Civil Engineering",
+      "count": 60
+    },
+    {
+      "program": "Mechanical Engineering",
+      "count": 120
+    },
+    {
+      "program": "Electrical and Electronics Engineering",
+      "count": 60
+    },
+    {
+      "program": "Electronics and Communication Engineering",
+      "count": 60
+    },
+    {
+      "program": "Computer Engineering",
+      "count": 60
+    }
+  ],
+  "_processedAt": "2026-02-05T21:02:26.109+05:30"
 }

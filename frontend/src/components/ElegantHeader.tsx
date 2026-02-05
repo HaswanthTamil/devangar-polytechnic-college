@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Announcement } from '@/lib/types';
 import AnnouncementsCarousel from './AnnouncementsCarousel';
 import { motion, AnimatePresence } from "framer-motion";

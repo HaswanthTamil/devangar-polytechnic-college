@@ -1,47 +1,52 @@
 [
-    {
-        "name": "Thiru K.R. Periakaruppan",
-        "image": "/images/admin/trustee1.jpg",
-        "description": "Chairman of Devangar Educational Trust. Dedicated to providing quality education.",
-        "longDescription": "As the Chairman, Thiru K.R. Periakaruppan leads the vision of the Devangar Educational Trust with unwavering dedication. His leadership has been instrumental in modernizing our infrastructure and establishing partnerships with key industry leaders to enhance student employability.",
-        "category": "DPC",
-        "position": 1,
-        "visible": true
-    },
-    {
-        "name": "Thiru P.S. Rajendran",
-        "image": "/images/admin/trustee2.jpg",
-        "description": "Secretary. Focused on infrastructure and student development.",
-        "longDescription": "Thiru P.S. Rajendran oversees the day-to-day operations and strategic development of the college infrastructure. His focus on creating a conducive learning environment has resulted in state-of-the-art laboratories and improved student amenities.",
-        "category": "DPC",
-        "position": 2,
-        "visible": true
-    },
-    {
-        "name": "Thiru M.K. Sundaram",
-        "image": "/images/admin/trustee3.jpg",
-        "description": "Treasurer. Ensuring financial stability and growth.",
-        "longDescription": "With a keen eye for financial management, Thiru M.K. Sundaram ensures the sustainable growth of our institutions. His prudent fiscal policies have enabled continuous investment in academic excellence and campus development.",
-        "category": "DPC",
-        "position": 3,
-        "visible": true
-    },
-    {
-        "name": "Thiru A.B. Chandrasekaran",
-        "image": "/images/admin/trustee4.jpg",
-        "description": "Joint Secretary. Supports administration and academic planning.",
-        "longDescription": "Thiru A.B. Chandrasekaran plays a vital role in coordinating administrative functions and academic planning. He works closely with the faculty to ensure that our curriculum stays relevant and meets the highest educational standards.",
-        "category": "DEC",
-        "position": 1,
-        "visible": true
-    },
-    {
-        "name": "Thiru R.V. Natarajan",
-        "image": "/images/admin/trustee5.jpg",
-        "description": "Executive Member. Advisor on policy and management.",
-        "longDescription": "Serving as an Executive Member, Thiru R.V. Natarajan brings years of management experience to the board. His advisory role in policy formulation helps steer the college towards its long-term goals of innovation and service.",
-        "category": "DEC",
-        "position": 2,
-        "visible": true
-    }
+  {
+    "name": "Thiru K.R. Periakaruppan",
+    "image": "/images/admin/trustee1.jpg",
+    "description": "Chairman of Devangar Educational Trust. Dedicated to providing quality education.",
+    "longDescription": "As the Chairman, Thiru K.R. Periakaruppan leads the vision of the Devangar Educational Trust with unwavering dedication. His leadership has been instrumental in modernizing our infrastructure and establishing partnerships with key industry leaders to enhance student employability.",
+    "category": "DPC",
+    "position": 1,
+    "visible": true,
+    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+  },
+  {
+    "name": "Thiru P.S. Rajendran",
+    "image": "/images/admin/trustee2.jpg",
+    "description": "Secretary. Focused on infrastructure and student development.",
+    "longDescription": "Thiru P.S. Rajendran oversees the day-to-day operations and strategic development of the college infrastructure. His focus on creating a conducive learning environment has resulted in state-of-the-art laboratories and improved student amenities.",
+    "category": "DPC",
+    "position": 2,
+    "visible": true,
+    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+  },
+  {
+    "name": "Thiru M.K. Sundaram",
+    "image": "/images/admin/trustee3.jpg",
+    "description": "Treasurer. Ensuring financial stability and growth.",
+    "longDescription": "With a keen eye for financial management, Thiru M.K. Sundaram ensures the sustainable growth of our institutions. His prudent fiscal policies have enabled continuous investment in academic excellence and campus development.",
+    "category": "DPC",
+    "position": 3,
+    "visible": true,
+    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+  },
+  {
+    "name": "Thiru A.B. Chandrasekaran",
+    "image": "/images/admin/trustee4.jpg",
+    "description": "Joint Secretary. Supports administration and academic planning.",
+    "longDescription": "Thiru A.B. Chandrasekaran plays a vital role in coordinating administrative functions and academic planning. He works closely with the faculty to ensure that our curriculum stays relevant and meets the highest educational standards.",
+    "category": "DEC",
+    "position": 1,
+    "visible": true,
+    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+  },
+  {
+    "name": "Thiru R.V. Natarajan",
+    "image": "/images/admin/trustee5.jpg",
+    "description": "Executive Member. Advisor on policy and management.",
+    "longDescription": "Serving as an Executive Member, Thiru R.V. Natarajan brings years of management experience to the board. His advisory role in policy formulation helps steer the college towards its long-term goals of innovation and service.",
+    "category": "DEC",
+    "position": 2,
+    "visible": true,
+    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+  }
 ]
