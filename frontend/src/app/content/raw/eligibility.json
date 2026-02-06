@@ -1,0 +1,56 @@
+{
+  "eligibility": {
+    "title": "Eligibility Criteria",
+    "description": "Candidates seeking admission to the diploma programs must fulfill the following educational requirements.",
+    "criteria": [
+      "Candidates must have passed 10th Standard (SSLC) or equivalent examination.",
+      "Candidates who have passed 12th Standard (HSC) are eligible for direct admission to the second year (Lateral Entry).",
+      "A minimum of 40% marks is required in the qualifying examination.",
+      "Science and Mathematics must be major subjects in the qualifying examination."
+    ]
+  },
+  "fees": {
+    "title": "Fee Structure",
+    "description": "Fees will be collected from the candidates as detailed below for each academic term.",
+    "items": [
+      {
+        "label": "Tuition Fee",
+        "amount": "Rs. 10,000 /-",
+        "note": "Per Semester"
+      },
+      {
+        "label": "Caution Deposit",
+        "amount": "Rs. 2,000 /-",
+        "note": "Refundable"
+      },
+      {
+        "label": "Admission Fee",
+        "amount": "Rs. 500 /-",
+        "note": "One-time"
+      },
+      {
+        "label": "Application Fee",
+        "amount": "Rs. 100 /-",
+        "note": "One-time"
+      }
+    ]
+  },
+  "sessions": {
+    "title": "Academic Sessions",
+    "description": "Details regarding the examination system and academic calendar.",
+    "details": [
+      {
+        "label": "Examination System",
+        "value": "Year / SEM: TWO SEMESTER / YEAR"
+      },
+      {
+        "label": "Period of Exam",
+        "value": "APRIL AND OCTOBER"
+      },
+      {
+        "label": "Declaration of Results",
+        "value": "JUNE AND DECEMBER"
+      }
+    ]
+  }
+}

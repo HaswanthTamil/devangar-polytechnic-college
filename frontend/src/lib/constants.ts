@@ -6,7 +6,6 @@ export const menuItems = [
             { label: "Administration & Trust", href: "/academics/administration" },
             { label: "Faculty Directory", href: "/academics/faculty" },
             { label: "Mandatory Disclosures", href: "/academics/disclosures" },
-            { label: "AICTE Approvals", href: "/academics/approvals" }
         ]
     },
     {
@@ -14,8 +13,7 @@ export const menuItems = [
         href: "/admissions",
         dropdown: [
             { label: "Programs & Intake", href: "/admissions/programs" },
-            { label: "Eligibility & Fees", href: "/admissions/eligibility" },
-            { label: "Download Prospectus", href: "/admissions/prospectus" }
+            { label: "Eligibility & Fees", href: "/admissions/eligibility" }
         ]
     },
     {

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Diploma in Civil Engineering",
+    "slug": "civil-engineering",
+    "code": "DCE",
+    "intake": 60,
+    "description": "Focuses on construction, design, and maintenance of the physical and naturally built environment.",
+    "visible": true,
+    "position": 1
+  },
+  {
+    "name": "Diploma in Mechanical Engineering",
+    "slug": "mechanical-engineering",
+    "code": "DME",
+    "intake": 120,
+    "description": "Covers the design, analysis, manufacturing, and maintenance of mechanical systems.",
+    "visible": true,
+    "position": 2
+  },
+  {
+    "name": "Diploma in Electrical and Electronics Engineering",
+    "slug": "eee",
+    "code": "DEEE",
+    "intake": 60,
+    "description": "Deals with the study and application of electricity, electronics, and electromagnetism.",
+    "visible": true,
+    "position": 3
+  },
+  {
+    "name": "Diploma in Electronics and Communication Engineering",
+    "slug": "ece",
+    "code": "DECE",
+    "intake": 60,
+    "description": "Focuses on electronic circuits, communication systems, and signal processing.",
+    "visible": true,
+    "position": 4
+  },
+  {
+    "name": "Diploma in Computer Engineering",
+    "slug": "cse",
+    "code": "DCSE",
+    "intake": 60,
+    "description": "Integrates computer science and electrical engineering to develop computer hardware and software.",
+    "visible": true,
+    "position": 5
+  }
+]

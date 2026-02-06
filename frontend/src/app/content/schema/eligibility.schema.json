@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "eligibility": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "criteria": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "required": ["title", "description", "criteria"]
+    },
+    "fees": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "amount": { "type": "string" },
+              "note": { "type": "string" }
+            },
+            "required": ["label", "amount"]
+          }
+        }
+      },
+      "required": ["title", "description", "items"]
+    },
+    "sessions": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "details": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "value": { "type": "string" }
+            },
+            "required": ["label", "value"]
+          }
+        }
+      },
+      "required": ["title", "description", "details"]
+    }
+  },
+  "required": ["eligibility", "fees", "sessions"]
+}

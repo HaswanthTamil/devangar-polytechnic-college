@@ -118,3 +118,38 @@ export interface DisclosureData {
         count: number;
     }>;
 }
+
+export interface Program {
+    name: string;
+    slug: string;
+    code: string;
+    intake: number;
+    description: string;
+    visible: boolean;
+    position: number;
+}
+
+export interface EligibilityData {
+    eligibility: {
+        title: string;
+        description: string;
+        criteria: string[];
+    };
+    fees: {
+        title: string;
+        description: string;
+        items: Array<{
+            label: string;
+            amount: string;
+            note?: string;
+        }>;
+    };
+    sessions: {
+        title: string;
+        description: string;
+        details: Array<{
+            label: string;
+            value: string;
+        }>;
+    };
+}

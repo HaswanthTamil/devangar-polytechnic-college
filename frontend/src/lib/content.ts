@@ -1,7 +1,8 @@
+import 'server-only';
 import fs from 'fs';
 import path from 'path';
 import {
-    Page, Department, DepartmentContent, Faculty, Announcement, Banner, GalleryItem, FileItem, AboutData, Trustee, Principal, DisclosureData
+    Page, Department, DepartmentContent, Faculty, Announcement, Banner, GalleryItem, FileItem, AboutData, Trustee, Principal, DisclosureData, Program, EligibilityData
 } from './types';
 
 export * from './types'; // Re-export types for backward compatibility if needed, 
@@ -126,4 +127,12 @@ export function getPrincipal(): Principal {
 
 export function getDisclosure(): DisclosureData {
     return readContent<DisclosureData>('disclosure.json');
+}
+
+export function getPrograms(): Program[] {
+    return readContent<Program[]>('programs.json');
+}
+
+export function getEligibility(): EligibilityData {
+    return readContent<EligibilityData>('eligibility.json');
 }
