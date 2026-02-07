@@ -1,72 +1,78 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 export default function ElegantFooter() {
     return (
         <footer className="bg-white border-t border-stone-200 pt-24 font-sans text-stone-900">
-            <div className="container mx-auto px-6 pb-24">
-                <div className="grid md:grid-cols-4 gap-12 lg:gap-20 text-sm">
-                    <Link href="/">
-                    <div className="col-span-1 md:col-span-1">
-                        {/* Logo - Brand Blue & Gold */}
-                        <div className="w-10 h-10 bg-blue-900 flex items-center justify-center text-yellow-400 font-serif font-bold text-xl rounded-sm mb-6 border border-blue-800">
-                            D
-                        </div>
-                        {/* Title - Brand Blue */}
-                        <h4 className="font-playfair font-bold text-2xl text-blue-900 mb-6">Devangar Polytechnic</h4>
-                        <p className="text-stone-500 leading-relaxed max-w-xs font-serif">
+            <div className="container mx-auto px-6 pb-12">
+                <div className="grid md:grid-cols-4 gap-8 lg:gap-12 text-sm">
+
+                    {/* Column 1: Logo & Info */}
+                    <div className="md:col-span-1">
+                        <Link href="/">
+                            <div className="flex items-center gap-3 mb-6">
+                                {/* Logo - Brand Blue & Gold */}
+                                <div className="w-10 h-10 bg-blue-900 flex items-center justify-center text-yellow-400 font-serif font-bold text-xl rounded-sm">
+                                    D
+                                </div>
+                                <h4 className="font-playfair font-bold text-xl text-blue-900">Devangar <br />Polytechnic</h4>
+                            </div>
+                        </Link>
+                        <p className="text-stone-500 leading-relaxed font-serif mb-8 max-w-xs">
                             Established in 1998, we are dedicated to setting global standards in technical education.
                         </p>
-                    </div></Link>
+                    </div>
+
+                    {/* Column 2: Academics */}
                     <div>
-                        {/* Header - Brand Blue */}
-                        <h5 className="font-bold text-blue-900 mb-6 uppercase text-sm tracking-[0.2em]">Academics</h5>
+                        <h5 className="font-bold text-blue-900 mb-6 uppercase text-xs tracking-[0.2em]">Academics</h5>
                         <ul className="space-y-3 text-stone-500">
-                            {/* Links - Hover Red */}
-                            <li><a href="#" className="hover:text-red-700 transition">Diploma Courses</a></li>
-                            <li><a href="#" className="hover:text-red-700 transition">Admissions</a></li>
-                            <li><a href="#" className="hover:text-red-700 transition">Results</a></li>
+                            <li><Link href="/academics/administration" className="hover:text-red-700 transition-colors duration-300">Administration & Trust</Link></li>
+                            <li><Link href="/academics/faculty" className="hover:text-red-700 transition-colors duration-300">Faculty Directory</Link></li>
+                            <li><Link href="/academics/disclosures" className="hover:text-red-700 transition-colors duration-300">Mandatory Disclosures</Link></li>
                         </ul>
                     </div>
+
+                    {/* Column 3: Departments */}
                     <div>
-                        <h5 className="font-bold text-blue-900 mb-6 uppercase text-sm tracking-[0.2em]">Campus</h5>
+                        <h5 className="font-bold text-blue-900 mb-6 uppercase text-xs tracking-[0.2em]">Departments</h5>
                         <ul className="space-y-3 text-stone-500">
-                            <li><a href="#" className="hover:text-red-700 transition">Library</a></li>
-                            <li><a href="#" className="hover:text-red-700 transition">Hostel</a></li>
-                            <li><a href="#" className="hover:text-red-700 transition">Laboratories</a></li>
+                            <li><Link href="/departments/civil-engineering" className="hover:text-red-700 transition-colors duration-300">Civil Engineering</Link></li>
+                            <li><Link href="/departments/mechanical-engineering" className="hover:text-red-700 transition-colors duration-300">Mechanical Engineering</Link></li>
+                            <li><Link href="/departments/computer-engineering" className="hover:text-red-700 transition-colors duration-300">Computer Engineering</Link></li>
+                            <li><Link href="/departments/electrical-electronics" className="hover:text-red-700 transition-colors duration-300">Electrical & Electronics (EEE)</Link></li>
+                            <li><Link href="/departments/electronics-communication" className="hover:text-red-700 transition-colors duration-300">Electronics & Communication (ECE)</Link></li>
                         </ul>
                     </div>
+
+                    {/* Column 4: Contact */}
                     <div>
-                        <h5 className="font-bold text-blue-900 mb-6 uppercase text-sm tracking-[0.2em]">Contact</h5>
+                        <h5 className="font-bold text-blue-900 mb-6 uppercase text-xs tracking-[0.2em]">Contact Us</h5>
                         <address className="not-italic text-stone-500 mb-6 leading-relaxed font-serif">
                             Periyakulam Road,<br />
                             Theni - 625531,<br />
                             Tamil Nadu.
                         </address>
-                        <p className="text-stone-900 font-bold mb-1">+91 4546 252 525</p>
+                        <p className="text-stone-900 font-bold mb-1 text-lg font-playfair tracking-wide">+91 4546 252 525</p>
                     </div>
                 </div>
             </div>
 
             {/* Combined Footer Strip - BytesBrush */}
-            <div className="bg-stone-950 py-5 border-t border-white/5 relative z-20">
+            <div className="bg-stone-950 py-6 border-t border-white/5 relative z-20">
                 <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] font-bold uppercase tracking-[0.2em] text-stone-500">
 
                     {/* Copyright & Links */}
                     <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                         <span>&copy; Copyright 2026 <span className="hidden sm:inline">|</span> All Rights Reserved <span className="hidden sm:inline">|</span> Devangar Polytechnic College</span>
-                        {/* <div className="flex space-x-6">
-                            <a href="#" className="hover:text-stone-300 transition-colors">Privacy</a>
-                            <a href="#" className="hover:text-stone-300 transition-colors">Legal</a>
-                        </div> */}
                     </div>
 
                     {/* Developer Credit */}
-                    <a
+                    <Link
                         href="https://bytesbrush.in"
                         target="_blank"
-                        className="flex items-center gap-4 group hover:text-white transition-colors duration-500"
+                        className="flex items-center gap-3 group hover:text-white transition-colors duration-500"
                     >
                         <div className="flex flex-col items-end leading-tight">
                             <span className="text-[8px] opacity-70 group-hover:opacity-100 transition-opacity">Developed by</span>
@@ -78,11 +84,11 @@ export default function ElegantFooter() {
                                 src="/images/bytesbrush-logo.png"
                                 alt="BytesBrush Logo"
                                 className="w-full h-full object-contain invert"
-                                width={20}
-                                height={20}
+                                width={24}
+                                height={24}
                             />
                         </div>
-                    </a>
+                    </Link>
 
                 </div>
             </div>
