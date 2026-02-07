@@ -18,6 +18,9 @@ export interface Department {
     name: string;
     visible: boolean;
     position: number;
+    heroImage?: string;
+    heroOverlayText?: string;
+    estYear?: string;
 }
 
 export interface DepartmentContent {

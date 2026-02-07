@@ -24,6 +24,15 @@
             "position": {
                 "type": "integer",
                 "minimum": 0
+            },
+            "heroImage": {
+                "type": "string"
+            },
+            "heroOverlayText": {
+                "type": "string"
+            },
+            "estYear": {
+                "type": "string"
             }
         }
     }

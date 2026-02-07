@@ -29,9 +29,6 @@ export default function CivilDepartmentPage() {
             content={content}
             faculty={faculty}
             announcements={announcements}
-            heroImage="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop"
-            heroOverlayText="Building the foundation of modern society through sustainable infrastructure."
-            estYear="1984"
         />
     );
 }

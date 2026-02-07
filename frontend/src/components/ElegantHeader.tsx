@@ -5,6 +5,7 @@ import { Announcement } from '@/lib/types';
 import AnnouncementsCarousel from './AnnouncementsCarousel';
 import { motion, AnimatePresence } from "framer-motion";
 import { menuItems } from '@/lib/constants';
+import Link from 'next/link';
 
 interface ElegantHeaderProps {
     announcements: Announcement[];
@@ -30,6 +31,7 @@ export default function ElegantHeader({ announcements }: ElegantHeaderProps) {
             {/* 2. Main Navigation - Stone Base / Brand Accents */}
             <nav className="bg-white sticky top-0 z-40 border-b border-stone-200 shadow-sm">
                 <div className="container mx-auto px-6 h-24 flex justify-between items-center">
+                    <Link href="/">
                     <div className="flex items-center space-x-5">
                         {/* Logo / Brand Mark - Blue & Gold */}
                         <div className="w-12 h-12 bg-blue-900 flex items-center justify-center text-yellow-400 font-serif font-bold text-2xl rounded-sm shadow-sm">
@@ -40,7 +42,7 @@ export default function ElegantHeader({ announcements }: ElegantHeaderProps) {
                             <h1 className="text-2xl font-bold font-playfair text-blue-900 tracking-tight leading-none">DEVANGAR</h1>
                             <p className="text-[11px] text-stone-500 uppercase tracking-[0.2em] font-medium mt-1">Polytechnic College</p>
                         </div>
-                    </div>
+                    </div></Link>
 
                     {/* Desktop Menu */}
                     <div className="hidden lg:flex items-center space-x-8 xl:space-x-10 text-sm font-bold text-stone-800 tracking-wide uppercase">
@@ -57,7 +59,7 @@ export default function ElegantHeader({ announcements }: ElegantHeaderProps) {
 
                                 {/* Dropdown Menu */}
                                 {item.dropdown && item.dropdown.length > 0 && (
-                                    <div className="absolute left-0 top-full w-60 bg-white shadow-lg border-t-2 border-yellow-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
+                                    <div className={`absolute ${index >= menuItems.length - 2 ? 'right-0' : 'left-0'} top-full w-60 bg-white shadow-lg border-t-2 border-yellow-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 z-50`}>
                                         <div className="py-2">
                                             {item.dropdown.map((subItem, subIndex) => (
                                                 <a
@@ -73,10 +75,10 @@ export default function ElegantHeader({ announcements }: ElegantHeaderProps) {
                                 )}
                             </div>
                         ))}
-                        {/* CTA Button */}
+                        {/* CTA ButtonCTA Button
                         <button className="px-8 py-3 bg-red-700 text-white font-bold text-xs uppercase tracking-widest hover:bg-red-800 transition-colors duration-300 shadow-md shadow-red-100">
                             Apply Now
-                        </button>
+                        </button> */}
                     </div>
 
                     {/* Mobile Menu Button */}

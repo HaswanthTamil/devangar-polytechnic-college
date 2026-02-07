@@ -29,8 +29,6 @@ export default function MechanicalDepartmentPage() {
             content={content}
             faculty={faculty}
             announcements={announcements}
-            heroImage="https://images.unsplash.com/photo-1537462713205-e5126c842ce3?q=80&w=2070&auto=format&fit=crop"
-            heroOverlayText="Designing the machines that move the world forward."
         />
     );
 }
