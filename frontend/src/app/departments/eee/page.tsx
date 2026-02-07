@@ -29,8 +29,6 @@ export default function EeeDepartmentPage() {
             content={content}
             faculty={faculty}
             announcements={announcements}
-            heroImage="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop"
-            heroOverlayText="Powering the grid and energizing the future."
         />
     );
 }

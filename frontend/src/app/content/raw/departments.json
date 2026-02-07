@@ -3,42 +3,63 @@
     "slug": "civil-engineering",
     "name": "Civil Engineering",
     "visible": true,
-    "position": 1
+    "position": 1,
+    "heroImage": "/images/uploads/civil_engineering.jpg",
+    "heroOverlayText": "Building the foundation of modern society through sustainable infrastructure.",
+    "estYear": "1984"
   },
   {
     "slug": "mechanical-engineering",
     "name": "Mechanical Engineering",
     "visible": true,
-    "position": 2
+    "position": 2,
+    "heroImage": "/images/uploads/mechanical_engineering.jpg",
+    "heroOverlayText": "Engineering the machines and systems that power our world.",
+    "estYear": "1984"
   },
   {
     "slug": "computer-engineering",
     "name": "Computer Engineering",
     "visible": true,
-    "position": 3
+    "position": 3,
+    "heroImage": "/images/uploads/computer_engineering.jpg",
+    "heroOverlayText": "Innovating the future through advanced computing and technology.",
+    "estYear": "1984"
   },
   {
     "slug": "electronics-communication",
     "name": "Electronics & Communication",
     "visible": true,
-    "position": 4
+    "position": 4,
+    "heroImage": "/images/uploads/electronics_communication.jpg",
+    "heroOverlayText": "Connecting the world through cutting-edge communication systems.",
+    "estYear": "1984"
   },
   {
     "slug": "electrical-electronics",
     "name": "Electrical & Electronics",
     "visible": true,
-    "position": 5
+    "position": 5,
+    "heroImage": "/images/uploads/electrical_electronics.jpg",
+    "heroOverlayText": "Powering progress with innovative electrical and electronic solutions.",
+    "estYear": "1984"
   },
   {
     "slug": "basic-engineering",
     "name": "Basic Engineering",
     "visible": true,
-    "position": 6
+    "position": 6,
+    "heroImage": "/images/uploads/basic_engineering.jpg",
+    "heroOverlayText": "The fundamental pillars of engineering excellence.",
+    "estYear": "1984"
   },
   {
     "slug": "office-administration",
     "name": "Office Administration",
     "visible": true,
-    "position": 7
+    "position": 7,
+    "heroImage": "/images/uploads/office_administration.jpg",
+    "heroOverlayText": "Efficiency and excellence in institutional management.",
+    "estYear": "1984"
   }
 ]

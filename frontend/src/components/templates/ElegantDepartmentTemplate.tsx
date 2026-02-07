@@ -5,6 +5,7 @@ import { Department, DepartmentContent, Faculty, Announcement } from '@/lib/type
 import ElegantHeader from '../ElegantHeader';
 import ElegantFooter from '../ElegantFooter';
 import { motion, Variants } from "framer-motion";
+import Image from 'next/image';
 
 interface ElegantDepartmentTemplateProps {
     department: Department;
@@ -38,10 +39,14 @@ export default function ElegantDepartmentTemplate({
     content,
     faculty,
     announcements,
-    heroImage = "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop",
-    heroOverlayText = "Building the Future",
-    estYear = "1984"
+    heroImage,
+    heroOverlayText,
+    estYear
 }: ElegantDepartmentTemplateProps) {
+    const finalHeroImage: string = heroImage || department.heroImage || "/images/college-hero-bg.png";
+    const finalHeroOverlayText = heroOverlayText || department.heroOverlayText || "Building the Future";
+    const finalEstYear = estYear || department.estYear || "1984";
+
     return (
         <div className="flex flex-col min-h-screen bg-stone-50 font-sans text-stone-900 overflow-x-hidden selection:bg-blue-900 selection:text-white">
             <ElegantHeader announcements={announcements} />
@@ -57,8 +62,10 @@ export default function ElegantDepartmentTemplate({
                         className="absolute inset-0 z-0"
                     >
                         <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-transparent z-10" />
-                        <img
-                            src={heroImage}
+                        <Image
+                            width={1024}
+                            height={768}
+                            src={finalHeroImage}
                             alt={department.name}
                             className="w-full h-full object-cover opacity-60"
                         />
@@ -72,7 +79,7 @@ export default function ElegantDepartmentTemplate({
                             className="max-w-4xl"
                         >
                             <motion.span variants={fadeInUp} className="inline-block py-2 px-4 border border-yellow-500/50 text-yellow-500 text-xs font-bold uppercase tracking-[0.2em] mb-6 backdrop-blur-sm bg-black/30">
-                                Est. {estYear}
+                                Est. {finalEstYear}
                             </motion.span>
                             <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-playfair font-bold text-white mb-6 leading-[1.1]">
                                 Department of <br />
@@ -81,17 +88,17 @@ export default function ElegantDepartmentTemplate({
                                 </span>
                             </motion.h1>
                             <motion.p variants={fadeInUp} className="text-xl text-stone-300 max-w-2xl font-light leading-relaxed mb-10 border-l-4 border-red-700 pl-6">
-                                {heroOverlayText}
+                                {finalHeroOverlayText}
                             </motion.p>
 
-                            <motion.div variants={fadeInUp} className="flex gap-4">
+                            {/* <motion.div variants={fadeInUp} className="flex gap-4">
                                 <button className="px-8 py-4 bg-red-700 text-white font-bold uppercase text-xs tracking-widest hover:bg-red-800 transition-colors shadow-xl shadow-red-900/20">
                                     Course Modules
                                 </button>
                                 <button className="px-8 py-4 bg-white/10 text-white font-bold uppercase text-xs tracking-widest hover:bg-white/20 transition-colors backdrop-blur-sm border border-white/20">
                                     Virtual Lab
                                 </button>
-                            </motion.div>
+                            </motion.div> */}
                         </motion.div>
                     </div>
                 </div>
@@ -203,9 +210,11 @@ export default function ElegantDepartmentTemplate({
                                 <div key={idx} className="group relative">
                                     <div className="aspect-[3/4] overflow-hidden bg-stone-200 mb-4 relative">
                                         {f.photo ? (
-                                            <img
+                                            <Image
                                                 src={f.photo}
                                                 alt={f.name}
+                                                width={500}
+                                                height={500}
                                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
                                             />
                                         ) : (
@@ -237,14 +246,14 @@ export default function ElegantDepartmentTemplate({
                         <h2 className="text-4xl md:text-5xl font-playfair font-bold text-white mb-10 max-w-4xl mx-auto leading-tight">
                             Start Your Journey in <span className="italic font-serif text-blue-200">{department.name.replace('Department of ', '')}</span>
                         </h2>
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                        {/* <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <button className="px-10 py-4 bg-yellow-500 text-blue-950 font-bold uppercase text-xs tracking-widest hover:bg-yellow-400 transition-colors shadow-lg">
                                 Apply for Admission
                             </button>
                             <button className="px-10 py-4 border border-white/30 text-white font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-blue-950 transition-all">
                                 Download Brochure
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 

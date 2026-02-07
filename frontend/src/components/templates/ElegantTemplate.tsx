@@ -81,18 +81,18 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
 
                             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-6 justify-center">
                                 {/* Button Text: text-xs/sm */}
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/departments"
                                     className="min-w-[200px] px-8 py-4 bg-red-700 text-white font-bold tracking-[0.15em] text-xs uppercase hover:bg-red-800 transition-colors duration-300 shadow-lg shadow-red-900/20"
                                 >
                                     Explore Academics
-                                </a>
-                                <a
+                                </Link>
+                                {/* <a
                                     href="#"
                                     className="min-w-[200px] px-8 py-4 bg-transparent text-white border border-white/40 font-bold tracking-[0.15em] text-xs uppercase hover:bg-white hover:text-stone-900 transition-all duration-300 backdrop-blur-sm"
                                 >
                                     Virtual Tour
-                                </a>
+                                </a> */}
                             </motion.div>
                         </motion.div>
                     </div>

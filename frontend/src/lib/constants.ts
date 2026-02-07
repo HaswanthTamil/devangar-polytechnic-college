@@ -22,9 +22,9 @@ export const menuItems = [
         dropdown: [
             { label: "Civil Engineering", href: "/departments/civil-engineering" },
             { label: "Mechanical Engineering", href: "/departments/mechanical-engineering" },
-            { label: "Computer Engineering", href: "/departments/cse" },
-            { label: "EEE", href: "/departments/eee" },
-            { label: "ECE", href: "/departments/ece" }
+            { label: "Computer Engineering", href: "/departments/computer-engineering" },
+            { label: "EEE", href: "/departments/electrical-electronics" },
+            { label: "ECE", href: "/departments/electronics-communication" }
         ]
     },
     {

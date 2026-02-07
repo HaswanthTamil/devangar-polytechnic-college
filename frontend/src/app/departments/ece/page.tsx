@@ -29,8 +29,6 @@ export default function EceDepartmentPage() {
             content={content}
             faculty={faculty}
             announcements={announcements}
-            heroImage="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop"
-            heroOverlayText="Connecting the world through advanced electronic systems."
         />
     );
 }

@@ -3,8 +3,10 @@ import {
     getDepartments,
     getDepartmentBySlug,
     getDepartmentContent,
-    getFacultyByDepartment
+    getFacultyByDepartment,
+    getAnnouncements
 } from '@/lib/content';
+import ElegantDepartmentTemplate from '@/components/templates/ElegantDepartmentTemplate';
 
 // 1. Generate Static Params
 export async function generateStaticParams() {
@@ -24,64 +26,15 @@ export default async function DepartmentPage({ params }: { params: Promise<{ slu
     }
 
     const content = getDepartmentContent(slug);
-    const facultyList = getFacultyByDepartment(slug);
+    const faculty = getFacultyByDepartment(slug);
+    const announcements = getAnnouncements();
 
     return (
-        <div className="container mx-auto px-4 py-8">
-            {/* Header */}
-            <h1 className="text-4xl font-bold mb-6">{department.name}</h1>
-
-            {/* Content Sections */}
-            {content && content.sections && (
-                <div className="prose max-w-none mb-12">
-                    {content.sections.courses && (
-                        <div className="mb-8">
-                            <h2 className="text-2xl font-bold mb-4">Courses</h2>
-                            <div dangerouslySetInnerHTML={{ __html: content.sections.courses }} />
-                        </div>
-                    )}
-                    {content.sections.facilities && (
-                        <div className="mb-8">
-                            <h2 className="text-2xl font-bold mb-4">Facilities</h2>
-                            <div dangerouslySetInnerHTML={{ __html: content.sections.facilities }} />
-                        </div>
-                    )}
-                    {content.sections.placements && (
-                        <div className="mb-8">
-                            <h2 className="text-2xl font-bold mb-4">Placements</h2>
-                            <div dangerouslySetInnerHTML={{ __html: content.sections.placements }} />
-                        </div>
-                    )}
-                    {content.sections.activities && (
-                        <div className="mb-8">
-                            <h2 className="text-2xl font-bold mb-4">Activities</h2>
-                            <div dangerouslySetInnerHTML={{ __html: content.sections.activities }} />
-                        </div>
-                    )}
-                </div>
-            )}
-
-            {/* Faculty Section */}
-            {facultyList && facultyList.length > 0 && (
-                <section>
-                    <h2 className="text-3xl font-bold mb-6">Faculty</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {facultyList.map((f, idx) => (
-                            <div key={idx} className="border p-4 rounded shadow-sm">
-                                {f.photo && (
-                                    <img
-                                        src={f.photo}
-                                        alt={f.name}
-                                        className="w-full h-48 object-cover mb-4 rounded"
-                                    />
-                                )}
-                                <h3 className="text-xl font-bold">{f.name}</h3>
-                                {f.designation && <p className="text-gray-600">{f.designation}</p>}
-                            </div>
-                        ))}
-                    </div>
-                </section>
-            )}
-        </div>
+        <ElegantDepartmentTemplate
+            department={department}
+            content={content}
+            faculty={faculty}
+            announcements={announcements}
+        />
     );
 }

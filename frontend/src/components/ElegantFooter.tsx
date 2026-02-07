@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export default function ElegantFooter() {
@@ -6,6 +7,7 @@ export default function ElegantFooter() {
         <footer className="bg-white border-t border-stone-200 pt-24 font-sans text-stone-900">
             <div className="container mx-auto px-6 pb-24">
                 <div className="grid md:grid-cols-4 gap-12 lg:gap-20 text-sm">
+                    <Link href="/">
                     <div className="col-span-1 md:col-span-1">
                         {/* Logo - Brand Blue & Gold */}
                         <div className="w-10 h-10 bg-blue-900 flex items-center justify-center text-yellow-400 font-serif font-bold text-xl rounded-sm mb-6 border border-blue-800">
@@ -16,7 +18,7 @@ export default function ElegantFooter() {
                         <p className="text-stone-500 leading-relaxed max-w-xs font-serif">
                             Established in 1998, we are dedicated to setting global standards in technical education.
                         </p>
-                    </div>
+                    </div></Link>
                     <div>
                         {/* Header - Brand Blue */}
                         <h5 className="font-bold text-blue-900 mb-6 uppercase text-sm tracking-[0.2em]">Academics</h5>
