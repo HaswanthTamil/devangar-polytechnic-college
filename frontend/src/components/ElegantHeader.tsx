@@ -132,11 +132,11 @@ export default function ElegantHeader({ announcements }: ElegantHeaderProps) {
                                 </div>
 
                                 {/* Mobile CTA */}
-                                <div className="mb-6">
+                                {/* <div className="mb-6">
                                     <button className="w-full py-3 bg-red-700 text-white font-bold text-sm uppercase tracking-widest hover:bg-red-800 transition-colors duration-300 shadow-md">
                                         Apply Now
                                     </button>
-                                </div>
+                                </div> */}
 
                                 {/* Mobile Menu Items */}
                                 <div className="space-y-2">

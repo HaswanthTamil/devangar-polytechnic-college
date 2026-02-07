@@ -17,7 +17,7 @@ export default function Gallery({ data }: { data: GalleryItem[] }) {
                     <div key={category} className="container mx-auto px-4">
                         <div className="flex items-center justify-between mb-8">
                             <h3 className="text-3xl font-bold capitalize text-gray-900 border-l-4 border-blue-600 pl-4">{category}</h3>
-                            <span className="text-sm font-semibold text-blue-600 uppercase tracking-wide cursor-pointer hover:underline">View All</span>
+                            {/* <span className="text-sm font-semibold text-blue-600 uppercase tracking-wide cursor-pointer hover:underline">View All</span> */}
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

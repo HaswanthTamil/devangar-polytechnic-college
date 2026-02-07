@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { Banner } from '@/lib/types';
+import Link from 'next/link';
 
 export default function Banners({ data }: { data: Banner[] }) {
     if (!data || data.length === 0) return null;
@@ -34,12 +35,13 @@ export default function Banners({ data }: { data: Banner[] }) {
                         Empowering the next generation of engineers with world-class infrastructure and industry-oriented curriculum.
                     </p>
                     <div className="flex flex-wrap gap-4">
-                        <button type="button" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg hover:shadow-blue-500/50 transition-all transform hover:-translate-y-1">
+                        {/* <button type="button" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-lg hover:shadow-blue-500/50 transition-all transform hover:-translate-y-1">
                             Apply Now
-                        </button>
+                        </button> */}
+                        <Link href="/departments">
                         <button type="button" className="px-8 py-4 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-bold rounded-lg border border-white/30 transition-all">
                             Explore Departments
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
             </div>
