@@ -4,48 +4,48 @@
     "name": "Civil Engineering",
     "visible": true,
     "position": 1,
-    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+    "_processedAt": "2026-02-07T10:08:05.517+05:30"
   },
   {
     "slug": "mechanical-engineering",
     "name": "Mechanical Engineering",
     "visible": true,
     "position": 2,
-    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+    "_processedAt": "2026-02-07T10:08:05.517+05:30"
   },
   {
     "slug": "computer-engineering",
     "name": "Computer Engineering",
     "visible": true,
     "position": 3,
-    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+    "_processedAt": "2026-02-07T10:08:05.517+05:30"
   },
   {
     "slug": "electronics-communication",
     "name": "Electronics & Communication",
     "visible": true,
     "position": 4,
-    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+    "_processedAt": "2026-02-07T10:08:05.517+05:30"
   },
   {
     "slug": "electrical-electronics",
     "name": "Electrical & Electronics",
     "visible": true,
     "position": 5,
-    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+    "_processedAt": "2026-02-07T10:08:05.517+05:30"
   },
   {
     "slug": "basic-engineering",
     "name": "Basic Engineering",
     "visible": true,
     "position": 6,
-    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+    "_processedAt": "2026-02-07T10:08:05.517+05:30"
   },
   {
     "slug": "office-administration",
     "name": "Office Administration",
     "visible": true,
     "position": 7,
-    "_processedAt": "2026-02-05T21:02:26.109+05:30"
+    "_processedAt": "2026-02-07T10:08:05.517+05:30"
   }
 ]

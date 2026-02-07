@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "title": "Academic Block",
+      "description": "Situated on a sprawling 6.48-acre eco-friendly campus near Periyakulam, our Academic Block is the heart of Devangar Polytechnic College. The main building and workshop cover 86,345 sq. ft., designed to provide a conducive learning environment. It houses spacious, well-ventilated classrooms with tile flooring, and dedicated blocks for Physics, Chemistry, Mechanical, Electrical, Computer, Civil, and Electronics & Communication Engineering.",
+      "image": "/images/infrastructure/academic-block.jpg",
+      "order": 1
+    },
+    {
+      "title": "Central Library",
+      "description": "The Central Library is the intellectual lifeline of our institution, featuring over 5,000 volumes covering Engineering, Sciences, and Industrial Management. Housed in the Main Building, it provides students and faculty with ample resources for academic and general interest study. We subscribe to leading National and International technical journals and magazines to keep our academic community updated with the latest trends.",
+      "image": "/images/infrastructure/library.jpg",
+      "order": 2
+    },
+    {
+      "title": "Modern Laboratories",
+      "description": "Our institution boasts department-specific laboratories designed to bridge the gap between theory and practice. The workshop building, with a built-up area of 25,531 sq. ft., is equipped with a 63KVA generator to ensure uninterrupted practical training. Facilities include advanced labs for Mechanical, Electrical, Electronics, Civil, and Computer Engineering, fostering a hands-on learning approach.",
+      "image": "/images/infrastructure/laboratories.jpg",
+      "order": 3
+    },
+    {
+      "title": "State of the Art Equipment",
+      "description": "We have invested over Rs. 2.50 crores in establishing world-class laboratories. Our workshops are geared with modern industry-standard machinery including CNC Milling and Turning Machines, Lathes, Horizontal and Vertical Milling Machines, Hydraulic and Pneumatic Trainer Kits, PLC Trainers, and VLSI Kits. This extensive range of equipment ensures our students gain mastery over the tools used in the modern engineering landscape.",
+      "image": "/images/infrastructure/equipment.jpg",
+      "order": 4,
+      "features": [
+        "CNC Milling & Turning Machines",
+        "Universal Testing Machine",
+        "Hydraulic & Pneumatic Trainer Kits",
+        "PLC & VLSI Kits",
+        "63 KVA Generator Power Supply"
+      ]
+    }
+  ],
+  "_processedAt": "2026-02-07T10:08:05.517+05:30"
+}

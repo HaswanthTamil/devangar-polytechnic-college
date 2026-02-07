@@ -34,7 +34,6 @@ export const menuItems = [
             { label: "Infrastructure (Labs/Library)", href: "/campus-life/infrastructure" },
             { label: "Hostel & Transport", href: "/campus-life/amenities" },
             { label: "Events & Activities", href: "/campus-life/events" },
-            { label: "Student Support", href: "/campus-life/support" }
         ]
     },
     {

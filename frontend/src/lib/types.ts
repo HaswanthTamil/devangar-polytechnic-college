@@ -153,3 +153,15 @@ export interface EligibilityData {
         }>;
     };
 }
+
+export interface InfrastructureItem {
+    title: string;
+    description: string;
+    image: string;
+    order: number;
+    features?: string[];
+}
+
+export interface InfrastructureData {
+    items: InfrastructureItem[];
+}

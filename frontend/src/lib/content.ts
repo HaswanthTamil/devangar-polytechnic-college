@@ -2,7 +2,7 @@ import 'server-only';
 import fs from 'fs';
 import path from 'path';
 import {
-    Page, Department, DepartmentContent, Faculty, Announcement, Banner, GalleryItem, FileItem, AboutData, Trustee, Principal, DisclosureData, Program, EligibilityData
+    Page, Department, DepartmentContent, Faculty, Announcement, Banner, GalleryItem, FileItem, AboutData, Trustee, Principal, DisclosureData, Program, EligibilityData, InfrastructureData
 } from './types';
 
 export * from './types'; // Re-export types for backward compatibility if needed, 
@@ -135,4 +135,8 @@ export function getPrograms(): Program[] {
 
 export function getEligibility(): EligibilityData {
     return readContent<EligibilityData>('eligibility.json');
+}
+
+export function getInfrastructure(): InfrastructureData {
+    return readContent<InfrastructureData>('infrastructure.json');
 }
