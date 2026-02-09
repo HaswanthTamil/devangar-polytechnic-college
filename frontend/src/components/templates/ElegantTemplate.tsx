@@ -207,7 +207,7 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                     From the Principal&apos;s Desk
                                 </span>
                                 <h2 className="text-4xl md:text-xl font-playfair font-bold text-stone-900 mb-10 leading-tight">
-                                    &quot;I am happy to share that as a team of qualified & dedicated faculties,we from "Devangar Polytechnic College" are committed to impart quality and value based education,leading to employment and meeting the current global requirements. All our laboratories and infrastructures meet the AICTE and DOTE norms.&quot;
+                                    &quot;I am happy to share that as a team of qualified & dedicated faculties,we from Devangar Polytechnic College are committed to impart quality and value based education,leading to employment and meeting the current global requirements. All our laboratories and infrastructures meet the AICTE and DOTE norms.&quot;
                                 </h2>
                                 {/* Prose: prose-lg (not xl) */}
                                 <div className="prose prose-lg prose-stone text-stone-600 font-serif leading-relaxed mb-12">
