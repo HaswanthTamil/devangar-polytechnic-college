@@ -176,15 +176,15 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                         Our new team has united from strong backgrounds to reach new heights in education. Realizing the importance of uplifting downtrodden children and rural communities, we are committed to developing world-class educational institutions.
                                     </p>
                                 </div>
-
+                                
                                 <div className="flex flex-wrap gap-6">
-                                    <a
-                                        href="#"
+                                    <Link
+                                        href="/academics/administration"
                                         className="inline-flex items-center px-8 py-4 bg-red-700 text-white font-bold tracking-[0.15em] text-xs uppercase hover:bg-red-800 transition-colors shadow-lg shadow-red-900/10 group"
                                     >
                                         Read Our Story
                                         <span className="ml-2 group-hover:translate-x-1 transition-transform">&rarr;</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </motion.div>
 
