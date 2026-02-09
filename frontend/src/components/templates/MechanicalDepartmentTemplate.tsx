@@ -202,31 +202,11 @@ export default function MechanicalDepartmentTemplate({
                                 <span className="text-blue-900 font-bold uppercase tracking-[0.2em] text-xs mb-2 block">Our Pillars</span>
                                 <h2 className="text-4xl font-playfair font-bold text-stone-900">Distinguished Faculty</h2>
                             </div>
-                            <a href="#" className="hidden md:block text-red-700 font-bold uppercase text-xs tracking-widest hover:text-stone-900 transition-colors">View All Staff &rarr;</a>
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                             {faculty && faculty.map((f, idx) => (
                                 <div key={idx} className="group relative">
-                                    <div className="aspect-[3/4] overflow-hidden bg-stone-200 mb-4 relative">
-                                        {f.photo ? (
-                                            <Image
-                                                src={f.photo}
-                                                alt={f.name}
-                                                width={500}
-                                                height={500}
-                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
-                                            />
-                                        ) : (
-                                            <div className="w-full h-full flex items-center justify-center text-stone-400 bg-stone-100">
-                                                <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                                            </div>
-                                        )}
-                                        {/* Overlay Stats */}
-                                        <div className="absolute bottom-0 left-0 w-full bg-blue-900/90 backdrop-blur-sm p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                                            <p className="text-white text-xs font-bold uppercase tracking-widest text-center">View Profile</p>
-                                        </div>
-                                    </div>
                                     <h3 className="text-lg font-playfair font-bold text-stone-900 mb-1">{f.name}</h3>
                                     <p className="text-xs font-bold text-red-700 uppercase tracking-wider mb-2">{f.designation}</p>
                                     <p className="text-sm text-stone-500 font-serif leading-relaxed line-clamp-2">
