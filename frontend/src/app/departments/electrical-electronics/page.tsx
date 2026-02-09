@@ -5,15 +5,15 @@ import {
     getFacultyByDepartment,
     getAnnouncements
 } from '@/lib/content';
-import ElegantDepartmentTemplate from '@/components/templates/ElegantDepartmentTemplate';
+import EEEDepartmentTemplate from '@/components/templates/EEEDepartmentTemplate';
 
 export const metadata = {
-    title: 'Computer Engineering - Devangar Polytechnic College',
-    description: 'Department of Computer Engineering at Devangar Polytechnic College',
+    title: 'Electrical & Electronics - Devangar Polytechnic College',
+    description: 'Department of EEE at Devangar Polytechnic College',
 };
 
-export default function ComputerDepartmentPage() {
-    const slug = 'computer-engineering';
+export default function EeeDepartmentPage() {
+    const slug = 'electrical-electronics';
     const department = getDepartmentBySlug(slug);
     const content = getDepartmentContent(slug);
     const faculty = getFacultyByDepartment(slug);
@@ -24,7 +24,7 @@ export default function ComputerDepartmentPage() {
     }
 
     return (
-        <ElegantDepartmentTemplate
+        <EEEDepartmentTemplate
             department={department}
             content={content}
             faculty={faculty}

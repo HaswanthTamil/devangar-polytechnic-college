@@ -5,7 +5,7 @@ import {
     getFacultyByDepartment,
     getAnnouncements
 } from '@/lib/content';
-import ElegantDepartmentTemplate from '@/components/templates/ElegantDepartmentTemplate';
+import ECEDepartmentTemplate from '@/components/templates/ECEDepartmentTemplate';
 
 export const metadata = {
     title: 'Electronics & Communication - Devangar Polytechnic College',
@@ -24,7 +24,7 @@ export default function EceDepartmentPage() {
     }
 
     return (
-        <ElegantDepartmentTemplate
+        <ECEDepartmentTemplate
             department={department}
             content={content}
             faculty={faculty}

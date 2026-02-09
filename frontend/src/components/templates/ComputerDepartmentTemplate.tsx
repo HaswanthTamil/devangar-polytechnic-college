@@ -7,7 +7,7 @@ import ElegantFooter from '../ElegantFooter';
 import { motion, Variants } from "framer-motion";
 import Image from 'next/image';
 
-interface ElegantDepartmentTemplateProps {
+interface ComputerDepartmentTemplateProps {
     department: Department;
     content: DepartmentContent | undefined;
     faculty: Faculty[];
@@ -15,7 +15,6 @@ interface ElegantDepartmentTemplateProps {
     heroImage?: string;
     heroOverlayText?: string;
     estYear?: string;
-    labsCount?: string;
 }
 
 // Animations
@@ -35,16 +34,15 @@ const staggerContainer: Variants = {
     }
 };
 
-export default function ElegantDepartmentTemplate({
+export default function ComputerDepartmentTemplate({
     department,
     content,
     faculty,
     announcements,
     heroImage,
     heroOverlayText,
-    estYear,
-    labsCount = "06"
-}: ElegantDepartmentTemplateProps) {
+    estYear
+}: ComputerDepartmentTemplateProps) {
     const finalHeroImage: string = heroImage || department.heroImage || "/images/college-hero-bg.png";
     const finalHeroOverlayText = heroOverlayText || department.heroOverlayText || "Building the Future";
     const finalEstYear = estYear || department.estYear || "2010";
@@ -137,7 +135,7 @@ export default function ElegantDepartmentTemplate({
                                 </div>
                                 <div className="space-y-6">
                                     <div className="bg-stone-100 p-8 text-center border border-stone-200 transition hover:border-yellow-500">
-                                        <h3 className="text-4xl font-playfair font-bold text-stone-900 mb-2">{labsCount}</h3>
+                                        <h3 className="text-4xl font-playfair font-bold text-stone-900 mb-2">04</h3>
                                         <p className="text-xs font-bold uppercase tracking-widest text-stone-500">State-of-Art Labs</p>
                                     </div>
                                     <div className="bg-red-700 p-8 text-white text-center shadow-lg transform transition hover:-translate-y-2">

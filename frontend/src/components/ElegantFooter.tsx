@@ -20,7 +20,7 @@ export default function ElegantFooter() {
                             </div>
                         </Link>
                         <p className="text-stone-500 leading-relaxed font-serif mb-8 max-w-xs">
-                            Established in 1998, we are dedicated to setting global standards in technical education.
+                            Established in 2010, we are dedicated to setting global standards in technical education.
                         </p>
                     </div>
 
@@ -54,7 +54,7 @@ export default function ElegantFooter() {
                             Theni - 625531,<br />
                             Tamil Nadu.
                         </address>
-                        <p className="text-stone-900 font-bold mb-1 text-lg font-playfair tracking-wide">+91 4546 252 525</p>
+                        <p className="text-stone-900 font-bold mb-1 text-lg font-playfair tracking-wide"> 04546-235777</p>
                     </div>
                 </div>
             </div>

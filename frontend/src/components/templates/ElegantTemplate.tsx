@@ -66,7 +66,7 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                             <motion.div variants={fadeInUp} className="flex justify-center mb-10">
                                 {/* Badge - text-xs */}
                                 <span className="inline-block py-2 px-8 border-y border-yellow-500/30 text-xs font-bold tracking-[0.3em] text-yellow-500 uppercase bg-black/20 backdrop-blur-sm">
-                                    Est. 1998 &bull; Theni, Tamil Nadu
+                                    Est. 2010 &bull; Theni, Tamil Nadu
                                 </span >
                             </motion.div>
 
@@ -103,8 +103,8 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                     <div className="container mx-auto px-6">
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center divide-x divide-stone-100">
                             {[
-                                { number: "25+", label: "Years of Heritage" },
-                                { number: "06", label: "Academic Departments" },
+                                { number: "15+", label: "Years of Heritage" },
+                                { number: "05", label: "Academic Departments" },
                                 { number: "100%", label: "Placement Record" },
                                 { number: "50+", label: "Distinguished Faculty" },
                             ].map((stat, idx) => (

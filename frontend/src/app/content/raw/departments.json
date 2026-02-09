@@ -6,7 +6,7 @@
     "position": 1,
     "heroImage": "/images/uploads/civil_engineering.jpg",
     "heroOverlayText": "Building the foundation of modern society through sustainable infrastructure.",
-    "estYear": "1984"
+    "estYear": "2010"
   },
   {
     "slug": "mechanical-engineering",
@@ -15,7 +15,7 @@
     "position": 2,
     "heroImage": "/images/uploads/mechanical_engineering.jpg",
     "heroOverlayText": "Engineering the machines and systems that power our world.",
-    "estYear": "1984"
+    "estYear": "2010"
   },
   {
     "slug": "computer-engineering",
@@ -24,7 +24,7 @@
     "position": 3,
     "heroImage": "/images/uploads/computer_engineering.jpg",
     "heroOverlayText": "Innovating the future through advanced computing and technology.",
-    "estYear": "1984"
+    "estYear": "2010"
   },
   {
     "slug": "electronics-communication",
@@ -33,7 +33,7 @@
     "position": 4,
     "heroImage": "/images/uploads/electronics_communication.jpg",
     "heroOverlayText": "Connecting the world through cutting-edge communication systems.",
-    "estYear": "1984"
+    "estYear": "2010"
   },
   {
     "slug": "electrical-electronics",
@@ -42,7 +42,7 @@
     "position": 5,
     "heroImage": "/images/uploads/electrical_electronics.jpg",
     "heroOverlayText": "Powering progress with innovative electrical and electronic solutions.",
-    "estYear": "1984"
+    "estYear": "2010"
   },
   {
     "slug": "basic-engineering",
@@ -51,7 +51,7 @@
     "position": 6,
     "heroImage": "/images/uploads/basic_engineering.jpg",
     "heroOverlayText": "The fundamental pillars of engineering excellence.",
-    "estYear": "1984"
+    "estYear": "2010"
   },
   {
     "slug": "office-administration",
@@ -60,6 +60,6 @@
     "position": 7,
     "heroImage": "/images/uploads/office_administration.jpg",
     "heroOverlayText": "Efficiency and excellence in institutional management.",
-    "estYear": "1984"
+    "estYear": "2010"
   }
 ]

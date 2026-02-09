@@ -5,7 +5,7 @@ import {
     getFacultyByDepartment,
     getAnnouncements
 } from '@/lib/content';
-import ElegantDepartmentTemplate from '@/components/templates/ElegantDepartmentTemplate';
+import MechanicalDepartmentTemplate from '@/components/templates/MechanicalDepartmentTemplate';
 
 export const metadata = {
     title: 'Mechanical Engineering - Devangar Polytechnic College',
@@ -24,7 +24,7 @@ export default function MechanicalDepartmentPage() {
     }
 
     return (
-        <ElegantDepartmentTemplate
+        <MechanicalDepartmentTemplate
             department={department}
             content={content}
             faculty={faculty}

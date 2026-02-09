@@ -61,7 +61,7 @@ export default function CivilDepartmentTemplate({ department, content, faculty, 
                             className="max-w-4xl"
                         >
                             <motion.span variants={fadeInUp} className="inline-block py-2 px-4 border border-yellow-500/50 text-yellow-500 text-xs font-bold uppercase tracking-[0.2em] mb-6 backdrop-blur-sm bg-black/30">
-                                Est. 1984
+                                Est. 2010
                             </motion.span>
                             <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-playfair font-bold text-white mb-6 leading-[1.1]">
                                 Department of <br />
@@ -107,7 +107,7 @@ export default function CivilDepartmentTemplate({ department, content, faculty, 
                             <div className="grid grid-cols-2 gap-6">
                                 <div className="space-y-6 mt-12">
                                     <div className="bg-blue-950 p-8 text-white text-center shadow-lg transform transition hover:-translate-y-2">
-                                        <h3 className="text-4xl font-playfair font-bold text-yellow-400 mb-2">40+</h3>
+                                        <h3 className="text-4xl font-playfair font-bold text-yellow-400 mb-2">15+</h3>
                                         <p className="text-xs font-bold uppercase tracking-widest opacity-80">Years of Excellence</p>
                                     </div>
                                     <div className="bg-stone-100 p-8 text-center border border-stone-200 transition hover:border-yellow-500">
@@ -117,7 +117,7 @@ export default function CivilDepartmentTemplate({ department, content, faculty, 
                                 </div>
                                 <div className="space-y-6">
                                     <div className="bg-stone-100 p-8 text-center border border-stone-200 transition hover:border-yellow-500">
-                                        <h3 className="text-4xl font-playfair font-bold text-stone-900 mb-2">08</h3>
+                                        <h3 className="text-4xl font-playfair font-bold text-stone-900 mb-2">06</h3>
                                         <p className="text-xs font-bold uppercase tracking-widest text-stone-500">State-of-Art Labs</p>
                                     </div>
                                     <div className="bg-red-700 p-8 text-white text-center shadow-lg transform transition hover:-translate-y-2">

@@ -41,7 +41,7 @@ export default function LandingPage({ page, banners, announcements, gallery, fil
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div className="p-4">
-                            <div className="text-4xl font-bold mb-2">25+</div>
+                            <div className="text-4xl font-bold mb-2">15+</div>
                             <div className="text-blue-200">Years of Excellence</div>
                         </div>
                         <div className="p-4">
