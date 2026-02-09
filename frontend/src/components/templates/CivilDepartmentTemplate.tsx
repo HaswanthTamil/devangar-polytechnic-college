@@ -1,10 +1,10 @@
 "use client";
 
-import React from 'react';
 import { Department, DepartmentContent, Faculty, Announcement } from '@/lib/types';
 import ElegantHeader from '../ElegantHeader';
 import ElegantFooter from '../ElegantFooter';
 import { motion, Variants } from "framer-motion";
+import Image from 'next/image';
 
 interface CivilDepartmentTemplateProps {
     department: Department;
@@ -30,7 +30,7 @@ const staggerContainer: Variants = {
     }
 };
 
-export default function CivilDepartmentTemplate({ department, content, faculty, announcements }: CivilDepartmentTemplateProps) {
+export default function CivilDepartmentTemplate({ content, faculty, announcements }: CivilDepartmentTemplateProps) {
     return (
         <div className="flex flex-col min-h-screen bg-stone-50 font-sans text-stone-900 overflow-x-hidden selection:bg-blue-900 selection:text-white">
             <ElegantHeader announcements={announcements} />
@@ -46,7 +46,7 @@ export default function CivilDepartmentTemplate({ department, content, faculty, 
                         className="absolute inset-0 z-0"
                     >
                         <div className="absolute inset-0 bg-gradient-to-t from-stone-900 via-stone-900/60 to-transparent z-10" />
-                        <img
+                        <Image
                             src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop"
                             alt="Civil Engineering"
                             className="w-full h-full object-cover opacity-60"
@@ -197,7 +197,7 @@ export default function CivilDepartmentTemplate({ department, content, faculty, 
                                 <div key={idx} className="group relative">
                                     <div className="aspect-[3/4] overflow-hidden bg-stone-200 mb-4 relative">
                                         {f.photo ? (
-                                            <img
+                                            <Image
                                                 src={f.photo}
                                                 alt={f.name}
                                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter grayscale group-hover:grayscale-0"
