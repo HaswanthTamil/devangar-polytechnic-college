@@ -87,8 +87,8 @@ export default function EditContentPage() {
                             <span className="group-hover:-translate-x-1 transition-transform">&larr;</span>
                             <span className="text-[10px] font-bold uppercase tracking-widest">Dashboard</span>
                         </button>
-                        <h1 className="text-4xl font-playfair font-bold text-stone-900 mb-2">Editing <span className="text-red-700 italic">{filename}</span></h1>
-                        <p className="text-stone-500 font-serif italic">Strict schema validation enabled</p>
+                        <h1 className="text-4xl font-playfair font-bold text-stone-900 mb-2">Editing <span className="text-red-700 italic">{filename.replace('.json', '')}</span></h1>
+                        {/* <p className="text-stone-500 font-serif italic">Strict schema validation enabled</p> */}
                     </div>
 
                     <div className="flex gap-4">

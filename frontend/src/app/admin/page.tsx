@@ -56,7 +56,7 @@ export default function AdminPage() {
                         <p className="text-stone-500 font-serif italic">Devangar Polytechnic College &bull; Content Management</p>
                     </div>
                     <div className="text-right flex items-center gap-6">
-                        <span className="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-3 py-1 border border-red-100 rounded-full">Serverless Mode</span>
+                        {/* <span className="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-3 py-1 border border-red-100 rounded-full">Serverless Mode</span> */}
                         <button
                             onClick={handleLogout}
                             className="text-[10px] font-bold uppercase tracking-widest text-stone-400 hover:text-red-700 transition-colors flex items-center gap-2"
@@ -91,12 +91,12 @@ export default function AdminPage() {
                                     >
                                         <div className="relative z-10">
                                             <div className="text-[10px] font-bold text-red-700 uppercase tracking-widest mb-1 opacity-0 group-hover:opacity-100 transition-opacity">Edit Data</div>
-                                            <h3 className="text-lg font-playfair font-bold text-stone-800">{file}</h3>
+                                            <h3 className="text-lg font-playfair font-bold text-stone-800">{file.replace('.json', '')}</h3>
                                         </div>
-                                        <div className="mt-4 text-[10px] text-stone-400 font-serif italic uppercase flex justify-between items-center group-hover:text-stone-900">
+                                        {/* <div className="mt-4 text-[10px] text-stone-400 font-serif italic uppercase flex justify-between items-center group-hover:text-stone-900">
                                             <span>JSON Source</span>
                                             <span className="opacity-0 group-hover:opacity-100 transition-transform group-hover:translate-x-1">&rarr;</span>
-                                        </div>
+                                        </div> */}
                                         <div className="absolute top-0 right-0 w-16 h-16 bg-stone-50 -mr-8 -mt-8 rotate-45 group-hover:bg-red-50 transition-colors"></div>
                                     </motion.div>
                                 </Link>
@@ -117,10 +117,10 @@ export default function AdminPage() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                                 </svg>
                             </div>
-                            <h2 className="text-2xl font-playfair font-bold mb-4">Rebuild Content</h2>
-                            <p className="text-stone-600 text-sm mb-8 leading-relaxed">
+                            <h2 className="text-2xl font-playfair font-bold mb-4">Save all changes</h2>
+                            {/* <p className="text-stone-600 text-sm mb-8 leading-relaxed">
                                 Synchronize raw content changes, validate against schemas, and generate processed data for the public site.
-                            </p>
+                            </p> */}
 
                             <button
                                 onClick={handleRebuild}
@@ -130,7 +130,7 @@ export default function AdminPage() {
                                     : 'bg-red-700 text-white hover:bg-stone-900 shadow-lg shadow-red-900/10'
                                     }`}
                             >
-                                {isPending ? 'Processing Pipeline...' : 'Start Content Rebuild'}
+                                {isPending ? 'Processing Pipeline...' : 'Save and redeploy'}
                             </button>
 
                             <AnimatePresence>
@@ -212,7 +212,7 @@ export default function AdminPage() {
 
                 <footer className="mt-20 pt-8 border-t border-stone-200 text-center">
                     <p className="text-[10px] font-bold text-stone-400 uppercase tracking-[0.3em]">
-                        &copy; 2026 Devangar Polytechnic College &bull; Academic Excellence Since 1998
+                        &copy; 2026 Devangar Polytechnic College &bull; Academic Excellence Since 2010
                     </p>
                 </footer>
             </div>
