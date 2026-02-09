@@ -77,9 +77,14 @@ export default function FacultyPage() {
 
                                     {/* Other Faculty Grid */}
                                     {otherFaculty.length > 0 && (
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                        <div className="flex flex-wrap justify-center gap-6">
                                             {otherFaculty.map((faculty, index) => (
-                                                <FacultyCompactCard key={`${dept.slug}-${index}`} faculty={faculty} />
+                                                <div 
+                                                    key={`${dept.slug}-${index}`} 
+                                                    className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+                                                >
+                                                    <FacultyCompactCard faculty={faculty} />
+                                                </div>
                                             ))}
                                         </div>
                                     )}

@@ -79,7 +79,7 @@
     "heroImage": "/images/uploads/civil_engineering.jpg",
     "heroOverlayText": "Building the foundation of modern society through sustainable infrastructure.",
     "estYear": "1984",
-    "_processedAt": "2026-02-07T12:24:36.585+05:30"
+    "_processedAt": "2026-02-09T21:39:36.123+05:30"
   },
   {
     "slug": "mechanical-engineering",
@@ -89,7 +89,7 @@
     "heroImage": "/images/uploads/mechanical_engineering.jpg",
     "heroOverlayText": "Engineering the machines and systems that power our world.",
     "estYear": "1984",
-    "_processedAt": "2026-02-07T12:24:36.585+05:30"
+    "_processedAt": "2026-02-09T21:39:36.123+05:30"
   },
   {
     "slug": "computer-engineering",
@@ -99,7 +99,7 @@
     "heroImage": "/images/uploads/computer_engineering.jpg",
     "heroOverlayText": "Innovating the future through advanced computing and technology.",
     "estYear": "1984",
-    "_processedAt": "2026-02-07T12:24:36.585+05:30"
+    "_processedAt": "2026-02-09T21:39:36.123+05:30"
   },
   {
     "slug": "electronics-communication",
@@ -109,7 +109,7 @@
     "heroImage": "/images/uploads/electronics_communication.jpg",
     "heroOverlayText": "Connecting the world through cutting-edge communication systems.",
     "estYear": "1984",
-    "_processedAt": "2026-02-07T12:24:36.585+05:30"
+    "_processedAt": "2026-02-09T21:39:36.123+05:30"
   },
   {
     "slug": "electrical-electronics",
@@ -119,7 +119,7 @@
     "heroImage": "/images/uploads/electrical_electronics.jpg",
     "heroOverlayText": "Powering progress with innovative electrical and electronic solutions.",
     "estYear": "1984",
-    "_processedAt": "2026-02-07T12:24:36.585+05:30"
+    "_processedAt": "2026-02-09T21:39:36.123+05:30"
   },
   {
     "slug": "basic-engineering",
@@ -129,7 +129,7 @@
     "heroImage": "/images/uploads/basic_engineering.jpg",
     "heroOverlayText": "The fundamental pillars of engineering excellence.",
     "estYear": "1984",
-    "_processedAt": "2026-02-07T12:24:36.585+05:30"
+    "_processedAt": "2026-02-09T21:39:36.123+05:30"
   },
   {
     "slug": "office-administration",
@@ -139,7 +139,7 @@
     "heroImage": "/images/uploads/office_administration.jpg",
     "heroOverlayText": "Efficiency and excellence in institutional management.",
     "estYear": "1984",
-    "_processedAt": "2026-02-07T12:24:36.585+05:30"
+    "_processedAt": "2026-02-09T21:39:36.123+05:30"
   }
 >>>>>>> b8d70f4816992f4b50000c4b6705810d13f5575f
 ]

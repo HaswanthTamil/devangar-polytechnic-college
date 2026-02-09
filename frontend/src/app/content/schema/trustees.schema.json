@@ -27,7 +27,7 @@
             },
             "category": {
                 "type": "string",
-                "enum": ["DPC", "DEC"]
+                "enum": ["DPC", "DET"]
             },
             "position": {
                 "type": "integer",

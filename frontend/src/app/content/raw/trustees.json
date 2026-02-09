@@ -1,47 +1,92 @@
 [
-    {
-        "name": "Thiru K.R. Periakaruppan",
-        "image": "/images/admin/trustee1.jpg",
-        "description": "Chairman of Devangar Educational Trust. Dedicated to providing quality education.",
-        "longDescription": "As the Chairman, Thiru K.R. Periakaruppan leads the vision of the Devangar Educational Trust with unwavering dedication. His leadership has been instrumental in modernizing our infrastructure and establishing partnerships with key industry leaders to enhance student employability.",
-        "category": "DPC",
-        "position": 1,
-        "visible": true
-    },
-    {
-        "name": "Thiru P.S. Rajendran",
-        "image": "/images/admin/trustee2.jpg",
-        "description": "Secretary. Focused on infrastructure and student development.",
-        "longDescription": "Thiru P.S. Rajendran oversees the day-to-day operations and strategic development of the college infrastructure. His focus on creating a conducive learning environment has resulted in state-of-the-art laboratories and improved student amenities.",
-        "category": "DPC",
-        "position": 2,
-        "visible": true
-    },
-    {
-        "name": "Thiru M.K. Sundaram",
-        "image": "/images/admin/trustee3.jpg",
-        "description": "Treasurer. Ensuring financial stability and growth.",
-        "longDescription": "With a keen eye for financial management, Thiru M.K. Sundaram ensures the sustainable growth of our institutions. His prudent fiscal policies have enabled continuous investment in academic excellence and campus development.",
-        "category": "DPC",
-        "position": 3,
-        "visible": true
-    },
-    {
-        "name": "Thiru A.B. Chandrasekaran",
-        "image": "/images/admin/trustee4.jpg",
-        "description": "Joint Secretary. Supports administration and academic planning.",
-        "longDescription": "Thiru A.B. Chandrasekaran plays a vital role in coordinating administrative functions and academic planning. He works closely with the faculty to ensure that our curriculum stays relevant and meets the highest educational standards.",
-        "category": "DEC",
-        "position": 1,
-        "visible": true
-    },
-    {
-        "name": "Thiru R.V. Natarajan",
-        "image": "/images/admin/trustee5.jpg",
-        "description": "Executive Member. Advisor on policy and management.",
-        "longDescription": "Serving as an Executive Member, Thiru R.V. Natarajan brings years of management experience to the board. His advisory role in policy formulation helps steer the college towards its long-term goals of innovation and service.",
-        "category": "DEC",
-        "position": 2,
-        "visible": true
-    }
+  {
+    "name": "Lion S Kamaraj",
+    "image": "",
+    "description": "Vice Chairman, Chennai Devangar Mahajana Sabai",
+    "longDescription": "A multifaceted businessman with current interests in real estate, building construction, and tour and travel operations. Earlier, he was involved in the textile business and also managed a hotel. He serves the community in his capacity as Vice Chairman of the Chennai Devangar Mahajana Sabai.",
+    "category": "DET",
+    "position": 0,
+    "visible": true
+  },
+  {
+    "name": "Mr. A. Abil Muradu Khan",
+    "image": "",
+    "description": "NRI Businessman & Investment Consultant",
+    "longDescription": "He is an NRI and a successful businessman with a strong background in agriculture and a keen interest in organic farming. He is also a social activist and is engaged in financial investment consultancy.",
+    "category": "DET",
+    "position": 4,
+    "visible": true
+  },
+  {
+    "name": "Lion Er. P Jeyakodi B.E., M.Tech, MBA",
+    "image": "",
+    "description": "Managing Partner, Enrec Engineers & Jee Flyash Products, Chennai",
+    "longDescription": "He is a multifaceted businessman in the construction field. He has been the Managing Partner of M/s Enrec Engineers, Chennai since 1997 and is also a Managing Partner at M/s Jee Flyash Products, a bricks manufacturing unit in Chennai.",
+    "category": "DET",
+    "position": 2,
+    "visible": true
+  },
+  {
+    "name": "Mr. A Mohan B.Com., DBM.",
+    "image": "",
+    "description": "Founder Chairman, Vidyasagar Group of Educational Institutions",
+    "longDescription": "An educationalist by profession, he is the Founder Chairman of the Vidyasagar Group of Educational Institutions, which includes Global School and multiple women’s colleges in Chengalpattu near Chennai.",
+    "category": "DET",
+    "position": 1,
+    "visible": true
+  },
+  {
+    "name": "Lion. Smt. Dr. Umaiyal Murugesan M.B.B.S., M.D. (O&G)..,",
+    "image": "",
+    "description": "Director, Sree Kumaran Hospital, Chennai",
+    "longDescription": " is an Obstetrician and Gynecologist by profession and a committed social activSheist. She is actively involved in educating underprivileged children and is known for her enterprising nature. She serves as the Director of Sree Kumaran Hospital, a multi-specialty hospital located at No. 3A & 3B, Kakkan Street, Tambaram, Chennai–44.",
+    "category": "DET",
+    "position": 0,
+    "visible": true
+  },
+  {
+    "name": "Mr. A. Abil Muradu Khan",
+    "image": "",
+    "description": "NRI Businessman & Investment Consultant",
+    "longDescription": "He is an NRI and a successful businessman with a strong background in agriculture and a keen interest in organic farming. He is also a social activist and is engaged in financial investment consultancy.",
+    "category": "DPC",
+    "position": 4,
+    "visible": true
+  },
+  {
+    "name": "Lion. Smt. Dr. Umaiyal Murugesan M.B.B.S., M.D. (O&G)..,",
+    "image": "",
+    "description": "Director, Sree Kumaran Hospital, Chennai",
+    "longDescription": " is an Obstetrician and Gynecologist by profession and a committed social activSheist. She is actively involved in educating underprivileged children and is known for her enterprising nature. She serves as the Director of Sree Kumaran Hospital, a multi-specialty hospital located at No. 3A & 3B, Kakkan Street, Tambaram, Chennai–44.",
+    "category": "DPC",
+    "position": 3,
+    "visible": true
+  },
+  {
+    "name": "Lion Er. P Jeyakodi B.E., M.Tech, MBA",
+    "image": "",
+    "description": "Managing Partner, Enrec Engineers & Jee Flyash Products, Chennai",
+    "longDescription": "He is a multifaceted businessman in the construction field. He has been the Managing Partner of M/s Enrec Engineers, Chennai since 1997 and is also a Managing Partner at M/s Jee Flyash Products, a bricks manufacturing unit in Chennai.",
+    "category": "DPC",
+    "position": 2,
+    "visible": true
+  },
+  {
+    "name": "Mr. A Mohan B.Com., DBM.",
+    "image": "",
+    "description": "Founder Chairman, Vidyasagar Group of Educational Institutions",
+    "longDescription": "An educationalist by profession, he is the Founder Chairman of the Vidyasagar Group of Educational Institutions, which includes Global School and multiple women’s colleges in Chengalpattu near Chennai.",
+    "category": "DPC",
+    "position": 1,
+    "visible": true
+  },
+  {
+    "name": "Lion S Kamaraj",
+    "image": "",
+    "description": "Vice Chairman, Chennai Devangar Mahajana Sabai",
+    "longDescription": "A multifaceted businessman with current interests in real estate, building construction, and tour and travel operations. Earlier, he was involved in the textile business and also managed a hotel. He serves the community in his capacity as Vice Chairman of the Chennai Devangar Mahajana Sabai.",
+    "category": "DPC",
+    "position": 0,
+    "visible": true
+  }
 ]
