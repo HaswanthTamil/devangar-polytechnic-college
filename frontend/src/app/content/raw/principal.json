@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "Er. A Velvizhi M.E., MISTE",
   "image": "/images/admin/principal.jpg",
   "designation": "Principal",
   "message": "I am happy to share that as a team of qualified & dedicated faculties,we from \"Devangar Polytechnic College\" are committed to impart quality and value based education,leading to employment and meeting the current global requirements. All our laboratories and infrastructures meet the AICTE and DOTE norms."
+=======
+    "name": "Er.A.Velvizhi M.E., MISTE,",
+    "image": "/images/admin/principal.jpg",
+    "designation": "Principal",
+    "message": "I am happy to share that as a team of qualified & dedicated faculties,we from "Devangar Polytechnic College" are committed to impart quality and value based education,leading to employment and meeting the current global requirements. All our laboratories and infrastructures meet the AICTE and DOTE norms."
+>>>>>>> 09ab91c089a97fb83afad2c3c32119c0349da2c8
 }

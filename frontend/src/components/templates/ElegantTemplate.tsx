@@ -176,7 +176,7 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                         Our new team has united from strong backgrounds to reach new heights in education. Realizing the importance of uplifting downtrodden children and rural communities, we are committed to developing world-class educational institutions.
                                     </p>
                                 </div>
-                                
+
                                 <div className="flex flex-wrap gap-6">
                                     <Link
                                         href="/academics/administration"
@@ -206,8 +206,8 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                     <span className="w-6 h-px bg-red-700"></span>
                                     From the Principal&apos;s Desk
                                 </span>
-                                <h2 className="text-4xl md:text-5xl font-playfair font-bold text-stone-900 mb-10 leading-tight">
-                                    &quot;We are committed to fostering an environment of intellectual curiosity and ethical leadership.&quot;
+                                <h2 className="text-4xl md:text-xl font-playfair font-bold text-stone-900 mb-10 leading-tight">
+                                    &quot;I am happy to share that as a team of qualified & dedicated faculties,we from Devangar Polytechnic College are committed to impart quality and value based education,leading to employment and meeting the current global requirements. All our laboratories and infrastructures meet the AICTE and DOTE norms.&quot;
                                 </h2>
                                 {/* Prose: prose-lg (not xl) */}
                                 <div className="prose prose-lg prose-stone text-stone-600 font-serif leading-relaxed mb-12">
@@ -217,7 +217,7 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                 </div>
                                 <div className="flex items-center gap-8 border-t border-stone-200 pt-8">
                                     <div className="flex flex-col">
-                                        <span className="font-playfair font-bold text-xl text-stone-900">Dr. Name Here</span>
+                                        <span className="font-playfair font-bold text-xl text-stone-900">Er.A.Velvizhi M.E., MISTE,</span>
                                         <span className="text-xs text-stone-500 uppercase tracking-wider mt-1 font-bold">Principal</span>
                                     </div>
                                 </div>

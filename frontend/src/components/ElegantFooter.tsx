@@ -50,11 +50,10 @@ export default function ElegantFooter() {
                     <div>
                         <h5 className="font-bold text-blue-900 mb-6 uppercase text-xs tracking-[0.2em]">Contact Us</h5>
                         <address className="not-italic text-stone-500 mb-6 leading-relaxed font-serif">
-                            Periyakulam Road,<br />
-                            Theni - 625531,<br />
+                            842 - Devangar Polytechnic College,D.Vadipatti (Village),Periyakulam To Madurai Main Road,Periyakulam (TK),Theni - Dist Pin - 625602.,<br />
                             Tamil Nadu.
                         </address>
-                        <p className="text-stone-900 font-bold mb-1 text-lg font-playfair tracking-wide"> 04546-235777</p>
+                        <p className="text-stone-900 font-bold mb-1 text-lg font-playfair tracking-wide"><a href="tel:04546235777" className="hover:text-red-700 transition-colors">04546-235777</a></p>
                     </div>
                 </div>
             </div>
