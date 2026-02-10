@@ -1,7 +1,7 @@
 [
   {
     "name": "Lion S Kamaraj",
-    "image": "",
+    "image": "/images/uploads/lion.png",
     "description": "Vice Chairman, Chennai Devangar Mahajana Sabai",
     "longDescription": "A multifaceted businessman with current interests in real estate, building construction, and tour and travel operations. Earlier, he was involved in the textile business and also managed a hotel. He serves the community in his capacity as Vice Chairman of the Chennai Devangar Mahajana Sabai.",
     "category": "DET",
@@ -10,7 +10,7 @@
   },
   {
     "name": "Mr. A. Abil Muradu Khan",
-    "image": "",
+    "image": "/images/uploads/khan.png",
     "description": "NRI Businessman & Investment Consultant",
     "longDescription": "He is an NRI and a successful businessman with a strong background in agriculture and a keen interest in organic farming. He is also a social activist and is engaged in financial investment consultancy.",
     "category": "DET",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Lion Er. P Jeyakodi B.E., M.Tech, MBA",
-    "image": "",
+    "image": "/images/uploads/jeyacodi.png",
     "description": "Managing Partner, Enrec Engineers & Jee Flyash Products, Chennai",
     "longDescription": "He is a multifaceted businessman in the construction field. He has been the Managing Partner of M/s Enrec Engineers, Chennai since 1997 and is also a Managing Partner at M/s Jee Flyash Products, a bricks manufacturing unit in Chennai.",
     "category": "DET",
@@ -28,7 +28,7 @@
   },
   {
     "name": "Mr. A Mohan B.Com., DBM.",
-    "image": "",
+    "image": "/images/uploads/mohan.png",
     "description": "Founder Chairman, Vidyasagar Group of Educational Institutions",
     "longDescription": "An educationalist by profession, he is the Founder Chairman of the Vidyasagar Group of Educational Institutions, which includes Global School and multiple women’s colleges in Chengalpattu near Chennai.",
     "category": "DET",
@@ -37,7 +37,7 @@
   },
   {
     "name": "Lion. Smt. Dr. Umaiyal Murugesan M.B.B.S., M.D. (O&G)..,",
-    "image": "",
+    "image": "/images/uploads/umaiyal.jpg",
     "description": "Director, Sree Kumaran Hospital, Chennai",
     "longDescription": " is an Obstetrician and Gynecologist by profession and a committed social activSheist. She is actively involved in educating underprivileged children and is known for her enterprising nature. She serves as the Director of Sree Kumaran Hospital, a multi-specialty hospital located at No. 3A & 3B, Kakkan Street, Tambaram, Chennai–44.",
     "category": "DET",
@@ -46,7 +46,7 @@
   },
   {
     "name": "Mr. A. Abil Muradu Khan",
-    "image": "",
+    "image": "/images/uploads/khan.png",
     "description": "NRI Businessman & Investment Consultant",
     "longDescription": "He is an NRI and a successful businessman with a strong background in agriculture and a keen interest in organic farming. He is also a social activist and is engaged in financial investment consultancy.",
     "category": "DPC",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Lion. Smt. Dr. Umaiyal Murugesan M.B.B.S., M.D. (O&G)..,",
-    "image": "",
+    "image": "/images/uploads/umaiyal.jpg",
     "description": "Director, Sree Kumaran Hospital, Chennai",
     "longDescription": " is an Obstetrician and Gynecologist by profession and a committed social activSheist. She is actively involved in educating underprivileged children and is known for her enterprising nature. She serves as the Director of Sree Kumaran Hospital, a multi-specialty hospital located at No. 3A & 3B, Kakkan Street, Tambaram, Chennai–44.",
     "category": "DPC",
@@ -64,7 +64,7 @@
   },
   {
     "name": "Lion Er. P Jeyakodi B.E., M.Tech, MBA",
-    "image": "",
+    "image": "/images/uploads/jeyacodi.png",
     "description": "Managing Partner, Enrec Engineers & Jee Flyash Products, Chennai",
     "longDescription": "He is a multifaceted businessman in the construction field. He has been the Managing Partner of M/s Enrec Engineers, Chennai since 1997 and is also a Managing Partner at M/s Jee Flyash Products, a bricks manufacturing unit in Chennai.",
     "category": "DPC",
@@ -73,7 +73,7 @@
   },
   {
     "name": "Mr. A Mohan B.Com., DBM.",
-    "image": "",
+    "image": "/images/uploads/mohan.png",
     "description": "Founder Chairman, Vidyasagar Group of Educational Institutions",
     "longDescription": "An educationalist by profession, he is the Founder Chairman of the Vidyasagar Group of Educational Institutions, which includes Global School and multiple women’s colleges in Chengalpattu near Chennai.",
     "category": "DPC",
@@ -82,7 +82,7 @@
   },
   {
     "name": "Lion S Kamaraj",
-    "image": "",
+    "image": "/images/uploads/lion.png",
     "description": "Vice Chairman, Chennai Devangar Mahajana Sabai",
     "longDescription": "A multifaceted businessman with current interests in real estate, building construction, and tour and travel operations. Earlier, he was involved in the textile business and also managed a hotel. He serves the community in his capacity as Vice Chairman of the Chennai Devangar Mahajana Sabai.",
     "category": "DPC",
