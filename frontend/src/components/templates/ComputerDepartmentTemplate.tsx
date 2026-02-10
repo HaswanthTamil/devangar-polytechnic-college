@@ -210,7 +210,7 @@ export default function ComputerDepartmentTemplate({
                                     <h3 className="text-lg font-playfair font-bold text-stone-900 mb-1">{f.name}</h3>
                                     <p className="text-xs font-bold text-red-700 uppercase tracking-wider mb-2">{f.designation}</p>
                                     <p className="text-sm text-stone-500 font-serif leading-relaxed line-clamp-2">
-                                        Academic professional with deep expertise in the field.
+
                                     </p>
                                 </div>
                             ))}
