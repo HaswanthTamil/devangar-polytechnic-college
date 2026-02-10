@@ -29,6 +29,7 @@ export default function EeeDepartmentPage() {
             content={content}
             faculty={faculty}
             announcements={announcements}
+            heroImage='/dept/eee.jpg'
         />
     );
 }

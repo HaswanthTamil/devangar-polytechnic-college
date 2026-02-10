@@ -29,6 +29,7 @@ export default function EceDepartmentPage() {
             content={content}
             faculty={faculty}
             announcements={announcements}
+            heroImage='/dept/ece.jpg'
         />
     );
 }

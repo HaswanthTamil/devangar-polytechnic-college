@@ -13,9 +13,7 @@ export default function ElegantFooter() {
                         <Link href="/">
                             <div className="flex items-center gap-3 mb-6">
                                 {/* Logo - Brand Blue & Gold */}
-                                <div className="w-10 h-10 bg-blue-900 flex items-center justify-center text-yellow-400 font-serif font-bold text-xl rounded-sm">
-                                    D
-                                </div>
+                                <Image src="/logo.png" alt="Logo" width={50} height={50} />
                                 <h4 className="font-playfair font-bold text-xl text-blue-900">Devangar <br />Polytechnic</h4>
                             </div>
                         </Link>

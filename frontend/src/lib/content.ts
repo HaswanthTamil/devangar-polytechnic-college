@@ -93,7 +93,6 @@ export function getBanners(): Banner[] {
 export function getGallery(): GalleryItem[] {
     const gallery = readContent<GalleryItem[]>('gallery.json');
     const items = gallery.filter(isVisible);
-    console.log(items);
     return items.sort(sortByPosition);
 }
 

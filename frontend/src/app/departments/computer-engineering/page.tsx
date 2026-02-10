@@ -29,6 +29,7 @@ export default function ComputerDepartmentPage() {
             content={content}
             faculty={faculty}
             announcements={announcements}
+            heroImage='/dept/comp.jpg'
         />
     );
 }

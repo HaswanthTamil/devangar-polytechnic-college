@@ -29,6 +29,7 @@ export default function CivilDepartmentPage() {
             content={content}
             faculty={faculty}
             announcements={announcements}
+            heroImage='/dept/civil.jpg'
         />
     );
 }

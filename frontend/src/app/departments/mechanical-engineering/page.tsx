@@ -29,6 +29,7 @@ export default function MechanicalDepartmentPage() {
             content={content}
             faculty={faculty}
             announcements={announcements}
+            heroImage='/dept/mech.jpg'
         />
     );
 }
