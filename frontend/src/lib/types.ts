@@ -9,7 +9,7 @@ export interface Page {
     published?: boolean;
     visible?: boolean;
     sections: PageSection[];
-    template?: 'DefaultPage' | 'ProfilePage' | 'LandingPage';
+    template?: 'DefaultPage' | 'ProfilePage' | 'LandingPage' | 'ElegantTemplate';
     [key: string]: unknown;
 }
 
