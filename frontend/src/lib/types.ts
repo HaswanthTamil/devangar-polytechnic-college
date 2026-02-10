@@ -70,6 +70,11 @@ export interface FileItem {
     visible: boolean;
 }
 
+export interface HomeData {
+    collegeImage: string;
+    principalImage: string;
+}
+
 export interface AboutData {
     aboutText: string;
     address: string;
@@ -85,6 +90,7 @@ export interface TemplateProps {
     announcements: Announcement[];
     gallery: GalleryItem[];
     files: FileItem[];
+    homeData: HomeData;
 }
 
 export interface Trustee {

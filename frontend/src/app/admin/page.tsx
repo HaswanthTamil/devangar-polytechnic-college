@@ -77,7 +77,7 @@ export default function AdminPage() {
                         </h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {files.map((file, idx) => (
+                            {files.map((file, idx) => file != 'auth.json' && (
                                 <Link
                                     key={file}
                                     href={`/admin/edit/${file}`}
@@ -91,7 +91,7 @@ export default function AdminPage() {
                                     >
                                         <div className="relative z-10">
                                             <div className="text-[10px] font-bold text-red-700 uppercase tracking-widest mb-1 opacity-0 group-hover:opacity-100 transition-opacity">Edit Data</div>
-                                            <h3 className="text-lg font-playfair font-bold text-stone-800">{file.replace('.json', '')}</h3>
+                                            <h3 className="text-lg font-playfair font-bold text-stone-800">{file == 'gallery.json' ? 'events' : file.replace('.json', '')}</h3>
                                         </div>
                                         {/* <div className="mt-4 text-[10px] text-stone-400 font-serif italic uppercase flex justify-between items-center group-hover:text-stone-900">
                                             <span>JSON Source</span>

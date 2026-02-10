@@ -1,16 +1,9 @@
 [
   {
-    "image": "/images/banners/college-front.jpg",
+    "image": "/images/uploads/main_entrance_close_up.jpeg",
     "alt": "College Main Building",
     "position": 1,
     "visible": true,
-    "_processedAt": "2026-02-09T23:10:24.290+05:30"
-  },
-  {
-    "image": "/images/banners/lab.jpg",
-    "alt": "Computer Laboratory",
-    "position": 2,
-    "visible": true,
-    "_processedAt": "2026-02-09T23:10:24.290+05:30"
+    "_processedAt": "2026-02-10T17:28:46.840+05:30"
   }
 ]

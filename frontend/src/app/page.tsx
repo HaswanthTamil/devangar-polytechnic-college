@@ -4,6 +4,7 @@ import {
   getAnnouncements,
   getGallery,
   getFiles,
+  getHomeData,
 } from "@/lib/content";
 import ElegantTemplate from "@/components/templates/ElegantTemplate";
 import { redirect } from "next/navigation";
@@ -17,6 +18,7 @@ export default function Home() {
   const announcements = getAnnouncements();
   const gallery = getGallery();
   const files = getFiles();
+  const homeData = getHomeData();
 
   // If "welcome" page is missing, redirect to fallback
   if (!page) redirect("/departments/cse");
@@ -28,6 +30,7 @@ export default function Home() {
       announcements={announcements}
       gallery={gallery}
       files={files}
+      homeData={homeData}
     />
   );
 }

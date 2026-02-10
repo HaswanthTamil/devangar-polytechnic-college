@@ -2,7 +2,6 @@
 
 import { TemplateProps } from '@/lib/types';
 import Gallery from '../Gallery';
-import FileList from '../FileList';
 import ElegantHeader from '../ElegantHeader';
 import ElegantFooter from '../ElegantFooter';
 import { motion, Variants } from "framer-motion";
@@ -26,7 +25,7 @@ const staggerContainer: Variants = {
     }
 };
 
-export default function ElegantTemplate({ page, banners, announcements, gallery, files }: TemplateProps) {
+export default function ElegantTemplate({ homeData, page, banners, announcements, gallery }: TemplateProps) {
     return (
         <div className="flex flex-col min-h-screen bg-stone-50 font-sans text-stone-900 overflow-x-hidden selection:bg-red-900 selection:text-white">
 
@@ -137,10 +136,19 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                 className="md:col-span-5 relative mt-8"
                             >
                                 <div className="aspect-[3/4] bg-stone-100 relative z-10 shadow-2xl shadow-stone-200 overflow-hidden">
-                                    {/* Main Image Placeholder */}
-                                    <div className="w-full h-full bg-stone-200 flex items-center justify-center text-stone-400 font-serif italic">
-                                        [College Building]
-                                    </div>
+                                    {/* Main Image (Building) */}
+                                    {homeData?.collegeImage ? (
+                                        <Image
+                                            src={homeData.collegeImage}
+                                            alt="College Building"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    ) : (
+                                        <div className="w-full h-full bg-stone-200 flex items-center justify-center text-stone-400 font-serif italic">
+                                            [College Building]
+                                        </div>
+                                    )}
                                     {/* Inner Border (Ivy League Style) */}
                                     <div className="absolute inset-4 border border-white/30"></div>
                                 </div>
@@ -231,10 +239,19 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                                 className="md:col-span-5 order-1 md:order-2 relative mt-8 md:mt-0"
                             >
                                 <div className="aspect-[3/4] bg-stone-100 relative z-10 shadow-2xl shadow-stone-200 overflow-hidden">
-                                    {/* Main Image Placeholder */}
-                                    <div className="w-full h-full bg-stone-200 flex items-center justify-center text-stone-400 font-serif italic text-xl">
-                                        Principal&apos;s Portrait
-                                    </div>
+                                    {/* Principal's Portrait */}
+                                    {homeData?.principalImage ? (
+                                        <Image
+                                            src={homeData.principalImage}
+                                            alt="Principal's Portrait"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    ) : (
+                                        <div className="w-full h-full bg-stone-200 flex items-center justify-center text-stone-400 font-serif italic text-xl">
+                                            Principal&apos;s Portrait
+                                        </div>
+                                    )}
                                     {/* Inner Border */}
                                     <div className="absolute inset-4 border border-white/30"></div>
                                 </div>
@@ -312,57 +329,6 @@ export default function ElegantTemplate({ page, banners, announcements, gallery,
                     </section>
                 )}
 
-                {/* 7. Downloads */}
-                {files.length > 0 && (
-                    <section className="py-24 bg-stone-900">
-                        <div className="container mx-auto px-6 max-w-5xl text-center">
-                            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-white mb-6">Student & Faculty Resources</h2>
-                            <p className="mb-12 text-stone-400 font-light text-lg">Access updated schedules, syllabi, and administrative forms.</p>
-                            <div className="bg-white/5 border border-white/10 p-12 text-left">
-                                <FileList data={files} />
-                            </div>
-                        </div>
-                    </section>
-                )}
-
-                {/* NEW: Newsletter Section (Legacy Integration) */}
-                <section className="bg-blue-950 py-16 border-t border-blue-900 relative overflow-hidden">
-                    {/* Decorative Background Texture */}
-                    <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-
-                    <div className="container mx-auto px-6 relative z-10">
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-6xl mx-auto">
-
-                            <div className="flex items-center space-x-6">
-                                {/* Ticket Icon - Styled */}
-                                <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center border border-white/20 transform -rotate-12">
-                                    <svg className="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
-                                    </svg>
-                                </div>
-                                <div>
-                                    <h3 className="text-3xl font-playfair font-bold text-white">Subscribe for Newsletter</h3>
-                                    <p className="text-blue-200 text-sm mt-1 font-serif tracking-wide">Stay updated with the latest campus news and events.</p>
-                                </div>
-                            </div>
-
-                            <form className="flex w-full md:w-auto bg-white p-1.5 rounded shadow-lg shadow-blue-900/50">
-                                <input
-                                    type="email"
-                                    placeholder="Enter your email address..."
-                                    className="px-4 py-3 bg-transparent w-full md:w-80 outline-none text-stone-800 placeholder-stone-400 font-medium"
-                                />
-                                <button
-                                    type="button"
-                                    className="bg-red-700 text-white px-8 py-3 font-bold uppercase tracking-widest text-xs hover:bg-red-800 transition-colors whitespace-nowrap"
-                                >
-                                    Subscribe Now
-                                </button>
-                            </form>
-
-                        </div>
-                    </div>
-                </section>
 
             </main>
 

@@ -6,6 +6,7 @@ import AnnouncementsCarousel from './AnnouncementsCarousel';
 import { motion, AnimatePresence } from "framer-motion";
 import { menuItems } from '@/lib/constants';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface ElegantHeaderProps {
     announcements: Announcement[];
@@ -34,9 +35,7 @@ export default function ElegantHeader({ announcements }: ElegantHeaderProps) {
                     <Link href="/">
                     <div className="flex items-center space-x-5">
                         {/* Logo / Brand Mark - Blue & Gold */}
-                        <div className="w-12 h-12 bg-blue-900 flex items-center justify-center text-yellow-400 font-serif font-bold text-2xl rounded-sm shadow-sm">
-                            D
-                        </div>
+                        <Image src="/logo.png" alt="Logo" width={90} height={90} />
                         <div className="flex flex-col">
                             {/* Brand Name */}
                             <h1 className="text-2xl font-bold font-playfair text-blue-900 tracking-tight leading-none">DEVANGAR</h1>
