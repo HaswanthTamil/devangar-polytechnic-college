@@ -61,6 +61,7 @@ export interface Banner {
 
 export interface GalleryItem {
     image: string;
+    name?: string;
     category: string;
     position: number;
     visible: boolean;

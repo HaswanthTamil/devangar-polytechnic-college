@@ -5,16 +5,16 @@
         "type": "object",
         "required": [
             "image",
-            "category",
+            "name",
             "position",
             "visible"
         ],
-        "additionalProperties": false,
+        "additionalProperties": true,
         "properties": {
             "image": {
                 "type": "string"
             },
-            "category": {
+            "name": {
                 "type": "string"
             },
             "position": {

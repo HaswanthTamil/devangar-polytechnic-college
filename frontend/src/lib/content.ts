@@ -90,12 +90,10 @@ export function getBanners(): Banner[] {
         .sort(sortByPosition);
 }
 
-export function getGallery(category?: string): GalleryItem[] {
+export function getGallery(): GalleryItem[] {
     const gallery = readContent<GalleryItem[]>('gallery.json');
-    let items = gallery.filter(isVisible);
-    if (category) {
-        items = items.filter((item) => item.category === category);
-    }
+    const items = gallery.filter(isVisible);
+    console.log(items);
     return items.sort(sortByPosition);
 }
 
