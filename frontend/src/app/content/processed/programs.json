@@ -7,7 +7,7 @@
     "description": "Focuses on construction, design, and maintenance of the physical and naturally built environment.",
     "visible": true,
     "position": 1,
-    "_processedAt": "2026-02-10T21:41:54.482+05:30"
+    "_processedAt": "2026-02-10T23:53:28.615+05:30"
   },
   {
     "name": "Diploma in Mechanical Engineering",
@@ -17,7 +17,7 @@
     "description": "Covers the design, analysis, manufacturing, and maintenance of mechanical systems.",
     "visible": true,
     "position": 2,
-    "_processedAt": "2026-02-10T21:41:54.482+05:30"
+    "_processedAt": "2026-02-10T23:53:28.615+05:30"
   },
   {
     "name": "Diploma in Electrical and Electronics Engineering",
@@ -27,7 +27,7 @@
     "description": "Deals with the study and application of electricity, electronics, and electromagnetism.",
     "visible": true,
     "position": 3,
-    "_processedAt": "2026-02-10T21:41:54.482+05:30"
+    "_processedAt": "2026-02-10T23:53:28.615+05:30"
   },
   {
     "name": "Diploma in Electronics and Communication Engineering",
@@ -37,7 +37,7 @@
     "description": "Focuses on electronic circuits, communication systems, and signal processing.",
     "visible": true,
     "position": 4,
-    "_processedAt": "2026-02-10T21:41:54.482+05:30"
+    "_processedAt": "2026-02-10T23:53:28.615+05:30"
   },
   {
     "name": "Diploma in Computer Engineering",
@@ -47,6 +47,6 @@
     "description": "Integrates computer science and electrical engineering to develop computer hardware and software.",
     "visible": true,
     "position": 5,
-    "_processedAt": "2026-02-10T21:41:54.482+05:30"
+    "_processedAt": "2026-02-10T23:53:28.615+05:30"
   }
 ]

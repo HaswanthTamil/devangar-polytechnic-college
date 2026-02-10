@@ -14,8 +14,10 @@ export default function ElegantFooter() {
                             <div className="flex items-center gap-3 mb-6">
                                 {/* Logo - Brand Blue & Gold */}
                                 <Image src="/logo.png" alt="Logo" width={50} height={50} />
-                                <h4 className="font-playfair font-bold text-xl text-blue-900">Devangar <br />Polytechnic</h4>
-                            </div>
+                                <div className='flex flex-col'>
+                                    <h4 className="font-playfair font-bold text-xl text-blue-900">Devangar</h4>
+                                    <span className='font-playfair font-bold text-md text-blue-900'>Polytechnic College</span>
+                                </div> </div>
                         </Link>
                         <p className="text-stone-500 leading-relaxed font-serif mb-8 max-w-xs">
                             Established in 2010, we are dedicated to setting global standards in technical education.
