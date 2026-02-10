@@ -1,37 +1,9 @@
 [
   {
-    "image": "",
-    "category": "",
-    "position": 0,
-    "visible": true,
-    "_processedAt": "2026-02-10T17:28:46.840+05:30"
-  },
-  {
-    "image": "",
-    "category": "",
-    "position": 0,
-    "visible": true,
-    "_processedAt": "2026-02-10T17:28:46.840+05:30"
-  },
-  {
-    "image": "",
-    "category": "",
-    "position": 0,
-    "visible": true,
-    "_processedAt": "2026-02-10T17:28:46.840+05:30"
-  },
-  {
-    "image": "",
-    "category": "",
-    "position": 0,
-    "visible": true,
-    "_processedAt": "2026-02-10T17:28:46.840+05:30"
-  },
-  {
     "image": "/images/gallery/event1.jpg",
     "category": "Events",
     "position": 1,
     "visible": true,
-    "_processedAt": "2026-02-10T17:28:46.840+05:30"
+    "_processedAt": "2026-02-10T19:27:46.541+05:30"
   }
 ]

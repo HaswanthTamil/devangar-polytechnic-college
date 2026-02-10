@@ -5,31 +5,25 @@
         "type": "object",
         "required": [
             "department",
-            "sections"
+            "image"
         ],
         "additionalProperties": false,
         "properties": {
             "department": {
                 "type": "string",
-                "pattern": "^[a-z0-9-]+$"
+                "enum": ["computer-engineering", "electrical-and-electronics-engineering", "electronics-and-communication-engineering", "mechanical-engineering", "civil-engineering"]
             },
-            "sections": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                    "courses": {
-                        "type": "string"
-                    },
-                    "facilities": {
-                        "type": "string"
-                    },
-                    "placements": {
-                        "type": "string"
-                    },
-                    "activities": {
-                        "type": "string"
-                    }
-                }
+            "name": {
+                "type": "string",
+                "enum": ["Computer Engineering", "Electrical and Electronics Engineering", "Electronics and Communication Engineering", "Mechanical Engineering", "Civil Engineering"]
+            },
+            "url": {
+                "type": "string",
+                "description": "Department URL"
+            },
+            "image": {
+                "type": "string",
+                "description": "Department featured image"
             }
         }
     }

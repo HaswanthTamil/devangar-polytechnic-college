@@ -1,12 +1,37 @@
 [
   {
+    "department": "electronics-and-communication-engineering",
+    "image": "/images/uploads/ece.png",
+    "url": "/departments/electronics-communication",
+    "name": "Electronics and Communication Engineering",
+    "_processedAt": "2026-02-10T19:27:46.541+05:30"
+  },
+  {
+    "department": "computer-engineering",
+    "image": "/images/uploads/computer_eng.png",
+    "url": "/departments/computer-engineering",
+    "name": "Computer Engineering",
+    "_processedAt": "2026-02-10T19:27:46.541+05:30"
+  },
+  {
     "department": "civil-engineering",
-    "sections": {
-      "courses": "Concrete Technology, Surveying, Structural Engineering.",
-      "facilities": "State-of-the-art surveying lab and material testing lab.",
-      "placements": "Top construction firms recruit from here.",
-      "activities": "Building modeling workshops and site visits."
-    },
-    "_processedAt": "2026-02-10T17:28:46.840+05:30"
+    "image": "/images/uploads/civil.png",
+    "url": "/departments/civil-engineering",
+    "name": "Civil Engineering",
+    "_processedAt": "2026-02-10T19:27:46.541+05:30"
+  },
+  {
+    "department": "mechanical-engineering",
+    "image": "/images/uploads/mech.png",
+    "url": "/departments/mechanical-engineering",
+    "name": "Mechanical Engineering",
+    "_processedAt": "2026-02-10T19:27:46.541+05:30"
+  },
+  {
+    "department": "electrical-and-electronics-engineering",
+    "image": "/images/uploads/eee.png",
+    "url": "/departments/electrical-electronics",
+    "name": "Electrical and Electronics Engineering",
+    "_processedAt": "2026-02-10T19:27:46.541+05:30"
   }
 ]

@@ -1,11 +1,32 @@
 [
   {
+    "department": "electronics-and-communication-engineering",
+    "image": "/images/uploads/ece.png",
+    "url": "/departments/electronics-communication",
+    "name": "Electronics and Communication Engineering"
+  },
+  {
+    "department": "computer-engineering",
+    "image": "/images/uploads/computer_eng.png",
+    "url": "/departments/computer-engineering",
+    "name": "Computer Engineering"
+  },
+  {
     "department": "civil-engineering",
-    "sections": {
-      "courses": "Concrete Technology, Surveying, Structural Engineering.",
-      "facilities": "State-of-the-art surveying lab and material testing lab.",
-      "placements": "Top construction firms recruit from here.",
-      "activities": "Building modeling workshops and site visits."
-    }
+    "image": "/images/uploads/civil.png",
+    "url": "/departments/civil-engineering",
+    "name": "Civil Engineering"
+  },
+  {
+    "department": "mechanical-engineering",
+    "image": "/images/uploads/mech.png",
+    "url": "/departments/mechanical-engineering",
+    "name": "Mechanical Engineering"
+  },
+  {
+    "department": "electrical-and-electronics-engineering",
+    "image": "/images/uploads/eee.png",
+    "url": "/departments/electrical-electronics",
+    "name": "Electrical and Electronics Engineering"
   }
 ]

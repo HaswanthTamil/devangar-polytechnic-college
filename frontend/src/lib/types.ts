@@ -25,7 +25,10 @@ export interface Department {
 
 export interface DepartmentContent {
     department: string;
-    sections: {
+    name?: string;
+    url?: string;
+    image: string;
+    sections?: {
         courses?: string;
         facilities?: string;
         placements?: string;
@@ -91,6 +94,8 @@ export interface TemplateProps {
     gallery: GalleryItem[];
     files: FileItem[];
     homeData: HomeData;
+    departments: Department[];
+    departmentContents: DepartmentContent[];
 }
 
 export interface Trustee {

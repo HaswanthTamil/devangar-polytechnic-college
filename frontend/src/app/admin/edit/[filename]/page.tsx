@@ -121,7 +121,11 @@ export default function EditContentPage() {
                         )}
 
                         <div className="bg-white p-10 border border-stone-200 shadow-sm">
-                            <DynamicForm schema={schema} data={data} onChange={setData} />
+                            <DynamicForm 
+                                schema={schema} 
+                                data={data} 
+                                onChange={(newData) => setData(newData as Record<string, unknown> | null)} 
+                            />
                         </div>
                     </div>
 

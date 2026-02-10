@@ -13,18 +13,18 @@ export async function listContentFiles() {
     return files.filter(f => f.endsWith('.json'));
 }
 
-export async function getRawContent(filename: string) {
+export async function getRawContent(filename: string): Promise<Record<string, unknown>> {
     const filePath = path.join(PATHS.RAW, filename);
     const data = await fs.readFile(filePath, 'utf-8');
-    return JSON.parse(data);
+    return JSON.parse(data) as Record<string, unknown>;
 }
 
-export async function getSchema(filename: string) {
+export async function getSchema(filename: string): Promise<Record<string, unknown> | null> {
     const schemaName = filename.replace('.json', '.schema.json');
     const schemaPath = path.join(PATHS.SCHEMA, schemaName);
     try {
         const data = await fs.readFile(schemaPath, 'utf-8');
-        return JSON.parse(data);
+        return JSON.parse(data) as Record<string, unknown>;
     } catch {
         console.warn(`No schema found for ${filename}`);
         return null;

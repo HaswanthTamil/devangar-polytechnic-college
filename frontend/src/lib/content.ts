@@ -144,3 +144,7 @@ export function getInfrastructure(): InfrastructureData {
 export function getHomeData(): HomeData {
     return readContent<HomeData>('home.json');
 }
+
+export function getDepartmentContents(): DepartmentContent[] {
+    return readContent<DepartmentContent[]>('department-content.json');
+}

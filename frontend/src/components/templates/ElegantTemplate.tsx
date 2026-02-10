@@ -25,7 +25,7 @@ const staggerContainer: Variants = {
     }
 };
 
-export default function ElegantTemplate({ homeData, page, banners, announcements, gallery }: TemplateProps) {
+export default function ElegantTemplate({ homeData, page, banners, announcements, gallery, departmentContents }: TemplateProps) {
     return (
         <div className="flex flex-col min-h-screen bg-stone-50 font-sans text-stone-900 overflow-x-hidden selection:bg-red-900 selection:text-white">
 
@@ -283,13 +283,7 @@ export default function ElegantTemplate({ homeData, page, banners, announcements
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
-                            {[
-                                { name: 'Civil Engineering', slug: 'civil-engineering' },
-                                { name: 'Mechanical Engineering', slug: 'mechanical-engineering' },
-                                { name: 'Electrical & Electronics', slug: 'eee' },
-                                { name: 'Electronics & Comm.', slug: 'ece' },
-                                { name: 'Computer Engineering', slug: 'cse' }
-                            ].map((dept, i) => (
+                            {departmentContents.map((deptContent, i) => (
                                 <motion.div
                                     key={i}
                                     variants={fadeInUp}
@@ -298,14 +292,24 @@ export default function ElegantTemplate({ homeData, page, banners, announcements
                                     viewport={{ once: true }}
                                     className="group"
                                 >
-                                    <Link href={`/departments/${dept.slug}`} className="block">
+                                    <Link href={deptContent.url || `/departments/${deptContent.department}`} className="block">
                                         <div className="aspect-[16/10] bg-stone-100 mb-8 relative overflow-hidden">
-                                            <div className="absolute inset-0 bg-stone-200 transition-transform duration-1000 ease-out group-hover:scale-105"></div>
+                                            {deptContent.image ? (
+                                                <Image
+                                                    src={deptContent.image}
+                                                    alt={deptContent.name || deptContent.department}
+                                                    fill
+                                                    className="object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
+                                                />
+                                            ) : (
+                                                <div className="absolute inset-0 bg-stone-200 transition-transform duration-1000 ease-out group-hover:scale-105"></div>
+                                            )}
                                         </div>
                                         <div className="pr-4">
-                                            <h3 className="text-2xl font-playfair font-bold text-stone-900 mb-4 group-hover:text-red-700 transition-colors duration-300">{dept.name}</h3>
-                                            {/* Desc: text-sm */}
-                                            <p className="text-stone-500 leading-relaxed mb-6 text-sm">Rigorous coursework combined with hands-on laboratory experience.</p>
+                                            <h3 className="text-2xl font-playfair font-bold text-stone-900 mb-4 group-hover:text-red-700 transition-colors duration-300">
+                                                {deptContent.name || deptContent.department}
+                                            </h3>
+                                            {/* <p className="text-stone-500 leading-relaxed mb-6 text-sm">Rigorous coursework combined with hands-on laboratory experience.</p> */}
                                             <span className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-stone-400 group-hover:text-stone-900 transition-colors">
                                                 Details <span className="ml-2 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300">&rarr;</span>
                                             </span>

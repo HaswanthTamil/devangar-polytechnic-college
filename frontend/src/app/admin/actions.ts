@@ -79,7 +79,7 @@ export async function loginAction(formData: FormData) {
         //     match: username === auth.username && password === auth.password
         // });
 
-        if (username === auth.username && password === auth.password) {
+        if (username === (auth as { username: string; password: string }).username && password === (auth as { username: string; password: string }).password) {
             const cookieStore = await cookies();
             cookieStore.set('admin_session', 'true', {
                 httpOnly: true,
@@ -106,7 +106,7 @@ export async function logoutAction() {
 export async function changePasswordAction(newPassword: string) {
     try {
         const auth = await getRawContent('auth.json');
-        auth.password = newPassword;
+        (auth as { username: string; password: string }).password = newPassword;
         await saveRawContent('auth.json', auth);
         return { success: true, message: 'Password updated successfully' };
     } catch (error: unknown) {
