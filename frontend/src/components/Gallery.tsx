@@ -25,7 +25,7 @@ export default function Gallery({ data }: { data: GalleryItem[] }) {
                                     x: {
                                         repeat: Infinity,
                                         repeatType: "loop",
-                                        duration: duplicatedItems.length,
+                                        duration: duplicatedItems.length * 0.5,
                                         ease: "linear",
                                     },
                                 }}
