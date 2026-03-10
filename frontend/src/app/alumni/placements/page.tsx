@@ -1,10 +1,21 @@
 import React from 'react';
+import PlacementsTemplate from '@/components/templates/PlacementsTemplate';
+import {
+    getAnnouncements,
+    getBanners,
+    getGallery
+} from '@/lib/content';
 
 export default function PlacementsPage() {
+    const announcements = getAnnouncements();
+    const banners = getBanners();
+    const gallery = getGallery();
+
     return (
-        <div className="container mx-auto px-6 py-12">
-            <h1 className="text-4xl font-bold text-blue-900 mb-6 font-playfair">Placement Records</h1>
-            <p className="text-lg text-stone-600">Content coming soon...</p>
-        </div>
+        <PlacementsTemplate
+            announcements={announcements}
+            banners={banners}
+            gallery={gallery}
+        />
     );
 }
