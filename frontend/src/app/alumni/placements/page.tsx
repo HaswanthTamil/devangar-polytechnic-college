@@ -1,4 +1,3 @@
-import React from 'react';
 import PlacementsTemplate from '@/components/templates/PlacementsTemplate';
 import {
     getAnnouncements,

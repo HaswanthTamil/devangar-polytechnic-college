@@ -1,6 +1,5 @@
 "use client";
 
-import React from 'react';
 import ElegantHeader from '@/components/ElegantHeader';
 import ElegantFooter from '@/components/ElegantFooter';
 import { motion, Variants } from 'framer-motion';
@@ -102,7 +101,7 @@ export default function PlacementsTemplate({ announcements, banners }: Placement
 
             <main className="flex-grow">
                 {/* 1. Hero Section - Professional Institutional Hero */}
-                <section className="relative h-[65vh] min-h-[500px] w-full flex items-center justify-center bg-blue-950 overflow-hidden">
+                <section className="relative h-[65vh] min-h-[500px] w-full flex items-center justify-center bg-blue-950/90 overflow-hidden">
                     {/* Background with Subtle Zoom */}
                     <motion.div
                         initial={{ scale: 1.1, opacity: 0 }}
@@ -295,7 +294,7 @@ export default function PlacementsTemplate({ announcements, banners }: Placement
                             <motion.div
                                 animate={{ x: ["0%", "-50%"] }}
                                 transition={{
-                                    duration: 30,
+                                    duration: 60,
                                     repeat: Infinity,
                                     ease: "linear"
                                 }}
@@ -304,9 +303,9 @@ export default function PlacementsTemplate({ announcements, banners }: Placement
                                 {[...partners, ...partners].map((partner, i) => (
                                     <div
                                         key={i}
-                                        className="inline-flex flex-col items-center justify-center min-w-[250px] h-32 bg-white/5 border border-white/10 p-6 mx-4 group hover:bg-white/10 transition-colors"
+                                        className="inline-flex flex-col items-center justify-center min-w-[250px] h-32 bg-white/5 border border-white/10 rounded-sm p-6 mx-2 group hover:bg-white/10 transition-colors"
                                     >
-                                        <span className="font-bold text-xs tracking-widest uppercase text-white/80 group-hover:text-yellow-500 transition-colors mb-2">{partner.name}</span>
+                                        <span className="font-bold text-sm tracking-widest uppercase text-white/80 group-hover:text-yellow-500 transition-colors mb-2">{partner.name}</span>
                                         <span className="text-[9px] text-stone-500 uppercase tracking-tighter">{partner.location}</span>
                                     </div>
                                 ))}

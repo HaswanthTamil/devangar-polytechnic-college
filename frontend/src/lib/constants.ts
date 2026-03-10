@@ -39,9 +39,7 @@ export const menuItems = [
         label: "ALUMNI",
         href: "/alumni",
         dropdown: [
-            { label: "Placement Records", href: "/alumni/placements" },
-            { label: "Recruiters", href: "/alumni/recruiters" },
-            { label: "Training Programs", href: "/alumni/training" }
+            { label: "Placement Records", href: "/alumni/placements" }
         ]
     }
 ];
