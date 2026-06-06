@@ -38,9 +38,13 @@ export default function AmenitiesPage() {
                             {/* Image Column */}
                             <div className="relative">
                                 <div className="aspect-[4/3] bg-stone-200 relative overflow-hidden shadow-2xl shadow-stone-200 group">
-                                    <div className="absolute inset-0 bg-stone-300 flex items-center justify-center text-stone-400 font-serif italic text-lg z-0">
-                                        <span>Hostel Building</span>
-                                    </div>
+                                    <Image
+                                        src="/hostel_building.jpeg"
+                                        alt="Devangar Polytechnic College hostel building"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        sizes="(min-width: 768px) 50vw, 100vw"
+                                    />
                                     <div className="absolute inset-4 border border-white/20 z-10 pointer-events-none"></div>
                                 </div>
                                 <div className="absolute -bottom-6 -right-6 w-2/3 h-2/3 border-2 border-yellow-500/20 -z-10"></div>
@@ -85,9 +89,13 @@ export default function AmenitiesPage() {
                             {/* Image Column */}
                             <div className="relative md:col-start-2">
                                 <div className="aspect-[4/3] bg-stone-200 relative overflow-hidden shadow-2xl shadow-stone-200 group">
-                                    <div className="absolute inset-0 bg-stone-300 flex items-center justify-center text-stone-400 font-serif italic text-lg z-0">
-                                        <span>Transport Fleet</span>
-                                    </div>
+                                    <Image
+                                        src="/dpc_bus.jpg"
+                                        alt="Devangar Polytechnic College transport fleet"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        sizes="(min-width: 768px) 50vw, 100vw"
+                                    />
                                     <div className="absolute inset-4 border border-white/20 z-10 pointer-events-none"></div>
                                 </div>
                                 <div className="absolute -bottom-6 -left-6 w-2/3 h-2/3 border-2 border-yellow-500/20 -z-10"></div>

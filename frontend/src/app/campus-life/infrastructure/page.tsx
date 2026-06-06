@@ -3,6 +3,13 @@ import ElegantHeader from "@/components/ElegantHeader";
 import ElegantFooter from "@/components/ElegantFooter";
 import Image from "next/image";
 
+const infrastructureImages = [
+    "/academic_block.png",
+    "/library.png",
+    "/cs_lab.png",
+    "/equipment.png",
+];
+
 export default function InfrastructurePage() {
     const data = getInfrastructure();
     const announcements = getAnnouncements();
@@ -39,10 +46,11 @@ export default function InfrastructurePage() {
                                         <div className="absolute inset-0 bg-stone-300 flex items-center justify-center text-stone-400 font-serif italic text-lg z-0">
                                             {item.image ? (
                                                 <Image
-                                                    src={item.image}
+                                                    src={infrastructureImages[index] ?? item.image}
                                                     alt={item.title}
                                                     fill
                                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                                    sizes="(min-width: 768px) 50vw, 100vw"
                                                 />
                                             ) : (
                                                 <span>{item.title} Image</span>
